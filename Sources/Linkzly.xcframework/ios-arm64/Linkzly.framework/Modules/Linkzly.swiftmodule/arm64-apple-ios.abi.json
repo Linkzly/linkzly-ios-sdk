@@ -1,0 +1,5314 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Linkzly",
+    "printedName": "Linkzly",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DeepLinkData",
+        "printedName": "DeepLinkData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)url",
+            "mangledName": "$s7Linkzly12DeepLinkDataC3urlSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)url",
+                "mangledName": "$s7Linkzly12DeepLinkDataC3urlSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)path",
+            "mangledName": "$s7Linkzly12DeepLinkDataC4pathSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)path",
+                "mangledName": "$s7Linkzly12DeepLinkDataC4pathSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smartLinkId",
+            "printedName": "smartLinkId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)smartLinkId",
+            "mangledName": "$s7Linkzly12DeepLinkDataC05smartC2IdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)smartLinkId",
+                "mangledName": "$s7Linkzly12DeepLinkDataC05smartC2IdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clickId",
+            "printedName": "clickId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)clickId",
+            "mangledName": "$s7Linkzly12DeepLinkDataC7clickIdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)clickId",
+                "mangledName": "$s7Linkzly12DeepLinkDataC7clickIdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameters",
+            "printedName": "parameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly12DeepLinkDataC10parametersSDySSypGvp",
+            "mangledName": "$s7Linkzly12DeepLinkDataC10parametersSDySSypGvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly12DeepLinkDataC10parametersSDySSypGvg",
+                "mangledName": "$s7Linkzly12DeepLinkDataC10parametersSDySSypGvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:path:smartLinkId:clickId:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeepLinkData",
+                "printedName": "Linkzly.DeepLinkData",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly12DeepLinkDataC3url4path05smartC2Id05clickH010parametersACSSSg_A3ISDySSypGtcfc",
+            "mangledName": "$s7Linkzly12DeepLinkDataC3url4path05smartC2Id05clickH010parametersACSSSg_A3ISDySSypGtcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeepLinkData",
+                "printedName": "Linkzly.DeepLinkData",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly12DeepLinkDataC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly12DeepLinkDataC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Required",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly12DeepLinkDataC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7Linkzly12DeepLinkDataC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getParameter",
+            "printedName": "getParameter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)getParameter:",
+            "mangledName": "$s7Linkzly12DeepLinkDataC12getParameteryypSgSSF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStringParameter",
+            "printedName": "getStringParameter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)getStringParameter:",
+            "mangledName": "$s7Linkzly12DeepLinkDataC18getStringParameterySSSgSSF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNumberParameter",
+            "printedName": "getNumberParameter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)getNumberParameter:",
+            "mangledName": "$s7Linkzly12DeepLinkDataC18getNumberParameterySo8NSNumberCSgSSF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBoolParameter",
+            "printedName": "getBoolParameter(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)getBoolParameter:",
+            "mangledName": "$s7Linkzly12DeepLinkDataC16getBoolParameterySbSSF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allParameters",
+            "printedName": "allParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDictionary",
+                "printedName": "Foundation.NSDictionary",
+                "usr": "c:objc(cs)NSDictionary"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)allParameters",
+            "mangledName": "$s7Linkzly12DeepLinkDataC13allParametersSo12NSDictionaryCvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)allParameters",
+                "mangledName": "$s7Linkzly12DeepLinkDataC13allParametersSo12NSDictionaryCvg",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(py)description",
+            "mangledName": "$s7Linkzly12DeepLinkDataC11descriptionSSvp",
+            "moduleName": "Linkzly",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)description",
+                "mangledName": "$s7Linkzly12DeepLinkDataC11descriptionSSvg",
+                "moduleName": "Linkzly",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DeepLinkData",
+                "printedName": "Linkzly.DeepLinkData",
+                "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData(im)init",
+            "mangledName": "$s7Linkzly12DeepLinkDataCACycfc",
+            "moduleName": "Linkzly",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Linkzly@objc(cs)DeepLinkData",
+        "mangledName": "$s7Linkzly12DeepLinkDataC",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventType",
+        "printedName": "EventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "install",
+            "printedName": "install",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.EventType.Type) -> Linkzly.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly9EventTypeO7installyA2CmF",
+            "mangledName": "$s7Linkzly9EventTypeO7installyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "open",
+            "printedName": "open",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.EventType.Type) -> Linkzly.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly9EventTypeO4openyA2CmF",
+            "mangledName": "$s7Linkzly9EventTypeO4openyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "purchase",
+            "printedName": "purchase",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.EventType.Type) -> Linkzly.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly9EventTypeO8purchaseyA2CmF",
+            "mangledName": "$s7Linkzly9EventTypeO8purchaseyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.EventType.Type) -> Linkzly.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly9EventTypeO6customyA2CmF",
+            "mangledName": "$s7Linkzly9EventTypeO6customyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.EventType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly9EventTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7Linkzly9EventTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly9EventTypeO8rawValueSSvp",
+            "mangledName": "$s7Linkzly9EventTypeO8rawValueSSvp",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly9EventTypeO8rawValueSSvg",
+                "mangledName": "$s7Linkzly9EventTypeO8rawValueSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Linkzly.EventType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly9EventTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7Linkzly9EventTypeO8allCasesSayACGvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Linkzly.EventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly9EventTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7Linkzly9EventTypeO8allCasesSayACGvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Linkzly9EventTypeO",
+        "mangledName": "$s7Linkzly9EventTypeO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Linkzly.EventType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyCodable",
+        "printedName": "AnyCodable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly10AnyCodableV5valueypvp",
+            "mangledName": "$s7Linkzly10AnyCodableV5valueypvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly10AnyCodableV5valueypvg",
+                "mangledName": "$s7Linkzly10AnyCodableV5valueypvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCodable",
+                "printedName": "Linkzly.AnyCodable",
+                "usr": "s:7Linkzly10AnyCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly10AnyCodableVyACypcfc",
+            "mangledName": "$s7Linkzly10AnyCodableVyACypcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCodable",
+                "printedName": "Linkzly.AnyCodable",
+                "usr": "s:7Linkzly10AnyCodableV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly10AnyCodableV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly10AnyCodableV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly10AnyCodableV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7Linkzly10AnyCodableV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7Linkzly10AnyCodableV",
+        "mangledName": "$s7Linkzly10AnyCodableV",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TrackingResponse",
+        "printedName": "TrackingResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV7successSbvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV7successSbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV7successSbvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV7successSbvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventId",
+            "printedName": "eventId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV7eventIdSSSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV7eventIdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV7eventIdSSSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV7eventIdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deepLinkData",
+            "printedName": "deepLinkData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Linkzly.AnyCodable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Linkzly.AnyCodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyCodable",
+                        "printedName": "Linkzly.AnyCodable",
+                        "usr": "s:7Linkzly10AnyCodableV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV12deepLinkDataSDySSAA10AnyCodableVGSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV12deepLinkDataSDySSAA10AnyCodableVGSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Linkzly.AnyCodable]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Linkzly.AnyCodable]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyCodable",
+                            "printedName": "Linkzly.AnyCodable",
+                            "usr": "s:7Linkzly10AnyCodableV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV12deepLinkDataSDySSAA10AnyCodableVGSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV12deepLinkDataSDySSAA10AnyCodableVGSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attribution",
+            "printedName": "attribution",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.TrackingResponse.AttributionData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AttributionData",
+                    "printedName": "Linkzly.TrackingResponse.AttributionData",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV11attributionAC15AttributionDataVSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV11attributionAC15AttributionDataVSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Linkzly.TrackingResponse.AttributionData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AttributionData",
+                        "printedName": "Linkzly.TrackingResponse.AttributionData",
+                        "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV11attributionAC15AttributionDataVSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV11attributionAC15AttributionDataVSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(success:eventId:deepLinkData:attribution:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrackingResponse",
+                "printedName": "Linkzly.TrackingResponse",
+                "usr": "s:7Linkzly16TrackingResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Linkzly.AnyCodable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Linkzly.AnyCodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyCodable",
+                        "printedName": "Linkzly.AnyCodable",
+                        "usr": "s:7Linkzly10AnyCodableV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.TrackingResponse.AttributionData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AttributionData",
+                    "printedName": "Linkzly.TrackingResponse.AttributionData",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attributionACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgtcfc",
+            "mangledName": "$s7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attributionACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgtcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "AttributionData",
+            "printedName": "AttributionData",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "smartLinkId",
+                "printedName": "smartLinkId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV11smartLinkIdSSvp",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV11smartLinkIdSSvp",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV11smartLinkIdSSvg",
+                    "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV11smartLinkIdSSvg",
+                    "moduleName": "Linkzly",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "clickId",
+                "printedName": "clickId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV7clickIdSSSgvp",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV7clickIdSSSgvp",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV7clickIdSSSgvg",
+                    "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV7clickIdSSSgvg",
+                    "moduleName": "Linkzly",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "confidence",
+                "printedName": "confidence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV10confidenceSdvp",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV10confidenceSdvp",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV10confidenceSdvg",
+                    "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV10confidenceSdvg",
+                    "moduleName": "Linkzly",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "attributionMethod",
+                "printedName": "attributionMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV17attributionMethodSSSgvp",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV17attributionMethodSSSgvp",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV17attributionMethodSSSgvg",
+                    "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV17attributionMethodSSSgvg",
+                    "moduleName": "Linkzly",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(smartLinkId:clickId:confidence:attributionMethod:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AttributionData",
+                    "printedName": "Linkzly.TrackingResponse.AttributionData",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV11smartLinkId05clickH010confidence17attributionMethodAESS_SSSgSdAJtcfc",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV11smartLinkId05clickH010confidence17attributionMethodAESS_SSSgSdAJtcfc",
+                "moduleName": "Linkzly",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AttributionData",
+                    "printedName": "Linkzly.TrackingResponse.AttributionData",
+                    "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV6encode2toys7Encoder_p_tKF",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:7Linkzly16TrackingResponseV15AttributionDataV",
+            "mangledName": "$s7Linkzly16TrackingResponseV15AttributionDataV",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrackingResponse",
+                "printedName": "Linkzly.TrackingResponse",
+                "usr": "s:7Linkzly16TrackingResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16TrackingResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7Linkzly16TrackingResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7Linkzly16TrackingResponseV",
+        "mangledName": "$s7Linkzly16TrackingResponseV",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.Environment.Type) -> Linkzly.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "Linkzly.Environment",
+                    "usr": "c:@M@Linkzly@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "Linkzly.Environment",
+                        "usr": "c:@M@Linkzly@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@Environment@EnvironmentProduction",
+            "mangledName": "$s7Linkzly11EnvironmentO10productionyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "staging",
+            "printedName": "staging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.Environment.Type) -> Linkzly.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "Linkzly.Environment",
+                    "usr": "c:@M@Linkzly@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "Linkzly.Environment",
+                        "usr": "c:@M@Linkzly@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@Environment@EnvironmentStaging",
+            "mangledName": "$s7Linkzly11EnvironmentO7stagingyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "development",
+            "printedName": "development",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.Environment.Type) -> Linkzly.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "Linkzly.Environment",
+                    "usr": "c:@M@Linkzly@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "Linkzly.Environment",
+                        "usr": "c:@M@Linkzly@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@Environment@EnvironmentDevelopment",
+            "mangledName": "$s7Linkzly11EnvironmentO11developmentyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "Linkzly.Environment",
+                    "usr": "c:@M@Linkzly@E@Environment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly11EnvironmentO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7Linkzly11EnvironmentO8rawValueACSgSi_tcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly11EnvironmentO8rawValueSivp",
+            "mangledName": "$s7Linkzly11EnvironmentO8rawValueSivp",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly11EnvironmentO8rawValueSivg",
+                "mangledName": "$s7Linkzly11EnvironmentO8rawValueSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Linkzly@E@Environment",
+        "mangledName": "$s7Linkzly11EnvironmentO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkzlyError",
+        "printedName": "LinkzlyError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notConfigured",
+            "printedName": "notConfigured",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyError.Type) -> Linkzly.LinkzlyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyError",
+                    "printedName": "Linkzly.LinkzlyError",
+                    "usr": "s:7Linkzly0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly0A5ErrorO13notConfiguredyA2CmF",
+            "mangledName": "$s7Linkzly0A5ErrorO13notConfiguredyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSDKKey",
+            "printedName": "invalidSDKKey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyError.Type) -> Linkzly.LinkzlyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyError",
+                    "printedName": "Linkzly.LinkzlyError",
+                    "usr": "s:7Linkzly0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly0A5ErrorO13invalidSDKKeyyA2CmF",
+            "mangledName": "$s7Linkzly0A5ErrorO13invalidSDKKeyyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "networkError",
+            "printedName": "networkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyError.Type) -> (any Swift.Error) -> Linkzly.LinkzlyError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> Linkzly.LinkzlyError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly0A5ErrorO07networkB0yACs0B0_pcACmF",
+            "mangledName": "$s7Linkzly0A5ErrorO07networkB0yACs0B0_pcACmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyError.Type) -> Linkzly.LinkzlyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyError",
+                    "printedName": "Linkzly.LinkzlyError",
+                    "usr": "s:7Linkzly0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly0A5ErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s7Linkzly0A5ErrorO15invalidResponseyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "noDeepLinkData",
+            "printedName": "noDeepLinkData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyError.Type) -> Linkzly.LinkzlyError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyError",
+                    "printedName": "Linkzly.LinkzlyError",
+                    "usr": "s:7Linkzly0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyError",
+                        "printedName": "Linkzly.LinkzlyError",
+                        "usr": "s:7Linkzly0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly0A5ErrorO14noDeepLinkDatayA2CmF",
+            "mangledName": "$s7Linkzly0A5ErrorO14noDeepLinkDatayA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly0A5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7Linkzly0A5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7Linkzly0A5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "Linkzly",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Linkzly0A5ErrorO",
+        "mangledName": "$s7Linkzly0A5ErrorO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkzlySDK",
+        "printedName": "LinkzlySDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlySDK?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlySDK",
+                    "printedName": "Linkzly.LinkzlySDK",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cpy)shared",
+            "mangledName": "$s7Linkzly0A3SDKC6sharedACSgvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Linkzly.LinkzlySDK?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlySDK",
+                        "printedName": "Linkzly.LinkzlySDK",
+                        "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)shared",
+                "mangledName": "$s7Linkzly0A3SDKC6sharedACSgvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(sdkKey:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "Linkzly.Environment",
+                "hasDefaultArg": true,
+                "usr": "c:@M@Linkzly@E@Environment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)configureWithSdkKey:environment:",
+            "mangledName": "$s7Linkzly0A3SDKC9configure6sdkKey11environmentySS_AA11EnvironmentOtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "configureWithSdkKey:environment:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDeepLink",
+            "printedName": "onDeepLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.DeepLinkData, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Linkzly.DeepLinkData, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeepLinkData",
+                        "printedName": "Linkzly.DeepLinkData",
+                        "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)onDeepLink:",
+            "mangledName": "$s7Linkzly0A3SDKC10onDeepLinkyyyAA0dE4DataC_SSSgtcFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUniversalLink",
+            "printedName": "onUniversalLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL, [Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL, [Swift.String : Any])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)onUniversalLink:",
+            "mangledName": "$s7Linkzly0A3SDKC15onUniversalLinkyyy10Foundation3URLV_SDySSypGtcFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleUniversalLink",
+            "printedName": "handleUniversalLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)handleUniversalLink:",
+            "mangledName": "$s7Linkzly0A3SDKC19handleUniversalLinkySbSo14NSUserActivityCFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleUniversalLink",
+            "printedName": "handleUniversalLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)handleUniversalLinkWithURL:",
+            "mangledName": "$s7Linkzly0A3SDKC19handleUniversalLinkySb10Foundation3URLVFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "handleUniversalLinkWithURL:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackInstall",
+            "printedName": "trackInstall(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Linkzly.DeepLinkData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeepLinkData",
+                            "printedName": "Linkzly.DeepLinkData",
+                            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC12trackInstall10completionyys6ResultOyAA12DeepLinkDataCSgs5Error_pGc_tFZ",
+            "mangledName": "$s7Linkzly0A3SDKC12trackInstall10completionyys6ResultOyAA12DeepLinkDataCSgs5Error_pGc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackOpen",
+            "printedName": "trackOpen(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Linkzly.DeepLinkData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeepLinkData",
+                            "printedName": "Linkzly.DeepLinkData",
+                            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC9trackOpen10completionyys6ResultOyAA12DeepLinkDataCSgs5Error_pGc_tFZ",
+            "mangledName": "$s7Linkzly0A3SDKC9trackOpen10completionyys6ResultOyAA12DeepLinkDataCSgs5Error_pGc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(_:parameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)trackEvent:parameters:",
+            "mangledName": "$s7Linkzly0A3SDKC10trackEvent_10parametersySS_SDySSypGSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackPurchase",
+            "printedName": "trackPurchase(parameters:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlySDK?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlySDK",
+                    "printedName": "Linkzly.LinkzlySDK",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<Linkzly.TrackingResponse, any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<Linkzly.TrackingResponse, any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<Linkzly.TrackingResponse, any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TrackingResponse",
+                            "printedName": "Linkzly.TrackingResponse",
+                            "usr": "s:7Linkzly16TrackingResponseV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC13trackPurchase10parameters10completionACSgSDySSypG_ys6ResultOyAA16TrackingResponseVs5Error_pGcSgtFZ",
+            "mangledName": "$s7Linkzly0A3SDKC13trackPurchase10parameters10completionACSgSDySSypG_ys6ResultOyAA16TrackingResponseVs5Error_pGcSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushEvents",
+            "printedName": "flushEvents(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlySDK?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlySDK",
+                    "printedName": "Linkzly.LinkzlySDK",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC11flushEvents10completionACSgySb_s5Error_pSgtc_tFZ",
+            "mangledName": "$s7Linkzly0A3SDKC11flushEvents10completionACSgySb_s5Error_pSgtc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPendingEventCount",
+            "printedName": "getPendingEventCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC20getPendingEventCountSiyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC20getPendingEventCountSiyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEventBatch",
+            "printedName": "trackEventBatch(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.String : Any]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)trackEventBatch:completion:",
+            "mangledName": "$s7Linkzly0A3SDKC15trackEventBatch_10completionySaySDySSypGG_ySb_s5Error_pSgtctFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserID",
+            "printedName": "setUserID(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)setUserID:",
+            "mangledName": "$s7Linkzly0A3SDKC9setUserIDyySSFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUserID",
+            "printedName": "getUserID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)getUserID",
+            "mangledName": "$s7Linkzly0A3SDKC9getUserIDSSSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSession",
+            "printedName": "startSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)startSession",
+            "mangledName": "$s7Linkzly0A3SDKC12startSessionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endSession",
+            "printedName": "endSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)endSession",
+            "mangledName": "$s7Linkzly0A3SDKC10endSessionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTrackingEnabled",
+            "printedName": "setTrackingEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)setTrackingEnabled:",
+            "mangledName": "$s7Linkzly0A3SDKC18setTrackingEnabledyySbFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isTrackingEnabled",
+            "printedName": "isTrackingEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)isTrackingEnabled",
+            "mangledName": "$s7Linkzly0A3SDKC17isTrackingEnabledSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAdvertisingTrackingEnabled",
+            "printedName": "setAdvertisingTrackingEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)setAdvertisingTrackingEnabled:",
+            "mangledName": "$s7Linkzly0A3SDKC29setAdvertisingTrackingEnabledyySbFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdvertisingTrackingEnabled",
+            "printedName": "isAdvertisingTrackingEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)isAdvertisingTrackingEnabled",
+            "mangledName": "$s7Linkzly0A3SDKC28isAdvertisingTrackingEnabledSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestTrackingPermission",
+            "printedName": "requestTrackingPermission(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthorizationStatus",
+                        "printedName": "AppTrackingTransparency.ATTrackingManager.AuthorizationStatus",
+                        "usr": "c:@E@ATTrackingManagerAuthorizationStatus"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC25requestTrackingPermission10completionyys6ResultOySo36ATTrackingManagerAuthorizationStatusVs5Error_pGc_tFZ",
+            "mangledName": "$s7Linkzly0A3SDKC25requestTrackingPermission10completionyys6ResultOySo36ATTrackingManagerAuthorizationStatusVs5Error_pGc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "14.5",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestTrackingPermissionObjC",
+            "printedName": "requestTrackingPermissionObjC(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)requestTrackingPermissionObjCWithCompletion:",
+            "mangledName": "$s7Linkzly0A3SDKC29requestTrackingPermissionObjC10completionyySSSg_s5Error_pSgtc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "14.5",
+            "objc_name": "requestTrackingPermissionObjCWithCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIDFA",
+            "printedName": "getIDFA()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)getIDFA",
+            "mangledName": "$s7Linkzly0A3SDKC7getIDFASSSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getATTStatus",
+            "printedName": "getATTStatus()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)getATTStatus",
+            "mangledName": "$s7Linkzly0A3SDKC12getATTStatusSSSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVisitorID",
+            "printedName": "getVisitorID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)getVisitorID",
+            "mangledName": "$s7Linkzly0A3SDKC12getVisitorIDSSyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetVisitorID",
+            "printedName": "resetVisitorID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)resetVisitorID",
+            "mangledName": "$s7Linkzly0A3SDKC14resetVisitorIDyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConversionValue",
+            "printedName": "updateConversionValue(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)updateConversionValue:",
+            "mangledName": "$s7Linkzly0A3SDKC21updateConversionValueyySiFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "14.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConversionValue",
+            "printedName": "updateConversionValue(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)updateConversionValue:completion:",
+            "mangledName": "$s7Linkzly0A3SDKC21updateConversionValue_10completionySi_ySbctFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "14.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConversionValue",
+            "printedName": "updateConversionValue(_:coarseValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoarseConversionValue",
+                "printedName": "StoreKit.SKAdNetwork.CoarseConversionValue",
+                "usr": "c:@T@SKAdNetworkCoarseConversionValue"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC21updateConversionValue_06coarseE0ySi_So017SKAdNetworkCoarsedE0atFZ",
+            "mangledName": "$s7Linkzly0A3SDKC21updateConversionValue_06coarseE0ySi_So017SKAdNetworkCoarsedE0atFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "16.1",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConversionValue",
+            "printedName": "updateConversionValue(_:coarseValue:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoarseConversionValue",
+                "printedName": "StoreKit.SKAdNetwork.CoarseConversionValue",
+                "usr": "c:@T@SKAdNetworkCoarseConversionValue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC21updateConversionValue_06coarseE010completionySi_So017SKAdNetworkCoarsedE0aySbctFZ",
+            "mangledName": "$s7Linkzly0A3SDKC21updateConversionValue_06coarseE010completionySi_So017SKAdNetworkCoarsedE0aySbctFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "16.1",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateConversionValue",
+            "printedName": "updateConversionValue(_:coarseValue:lockWindow:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoarseConversionValue",
+                "printedName": "StoreKit.SKAdNetwork.CoarseConversionValue",
+                "usr": "c:@T@SKAdNetworkCoarseConversionValue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC21updateConversionValue_06coarseE010lockWindow10completionySi_So017SKAdNetworkCoarsedE0aSbySbctFZ",
+            "mangledName": "$s7Linkzly0A3SDKC21updateConversionValue_06coarseE010lockWindow10completionySi_So017SKAdNetworkCoarsedE0aSbySbctFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "intro_iOS": "16.1",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkzlySDK",
+                "printedName": "Linkzly.LinkzlySDK",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(im)init",
+            "mangledName": "$s7Linkzly0A3SDKCACycfc",
+            "moduleName": "Linkzly",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(sdkKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)configureWithSdkKey:",
+            "mangledName": "$s7Linkzly0A3SDKC9configure6sdkKeyySS_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackInstallObjC",
+            "printedName": "trackInstallObjC(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.DeepLinkData?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Linkzly.DeepLinkData?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Linkzly.DeepLinkData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeepLinkData",
+                            "printedName": "Linkzly.DeepLinkData",
+                            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)trackInstallObjCWithCompletion:",
+            "mangledName": "$s7Linkzly0A3SDKC16trackInstallObjC10completionyyAA12DeepLinkDataCSg_s5Error_pSgtc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackOpenObjC",
+            "printedName": "trackOpenObjC(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.DeepLinkData?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Linkzly.DeepLinkData?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Linkzly.DeepLinkData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DeepLinkData",
+                            "printedName": "Linkzly.DeepLinkData",
+                            "usr": "c:@M@Linkzly@objc(cs)DeepLinkData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)trackOpenObjCWithCompletion:",
+            "mangledName": "$s7Linkzly0A3SDKC13trackOpenObjC10completionyyAA12DeepLinkDataCSg_s5Error_pSgtc_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:open:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIApplication.OpenURLOptionsKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenURLOptionsKey",
+                    "printedName": "UIKit.UIApplication.OpenURLOptionsKey",
+                    "usr": "c:@T@UIApplicationOpenURLOptionsKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)application:open:options:",
+            "mangledName": "$s7Linkzly0A3SDKC11application_4open7optionsSbSo13UIApplicationC_10Foundation3URLVSDySo0F17OpenURLOptionsKeyaypGtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "application",
+            "printedName": "application(_:continue:restorationHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([any UIKit.UIUserActivityRestoring]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[any UIKit.UIUserActivityRestoring]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[any UIKit.UIUserActivityRestoring]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIUserActivityRestoring",
+                            "printedName": "any UIKit.UIUserActivityRestoring",
+                            "usr": "c:objc(pl)UIUserActivityRestoring"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)application:continue:restorationHandler:",
+            "mangledName": "$s7Linkzly0A3SDKC11application_8continue18restorationHandlerSbSo13UIApplicationC_So14NSUserActivityCySaySo06UIUserI9Restoring_pGSgctFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK",
+        "mangledName": "$s7Linkzly0A3SDKC",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Name",
+        "printedName": "Name",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "linkzlyUniversalLinkReceived",
+            "printedName": "linkzlyUniversalLinkReceived",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea7LinkzlyE28linkzlyUniversalLinkReceivedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea7LinkzlyE28linkzlyUniversalLinkReceivedABvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea7LinkzlyE28linkzlyUniversalLinkReceivedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea7LinkzlyE28linkzlyUniversalLinkReceivedABvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "linkzlyDeepLinkDataReceived",
+            "printedName": "linkzlyDeepLinkDataReceived",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea7LinkzlyE27linkzlyDeepLinkDataReceivedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea7LinkzlyE27linkzlyDeepLinkDataReceivedABvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea7LinkzlyE27linkzlyDeepLinkDataReceivedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea7LinkzlyE27linkzlyDeepLinkDataReceivedABvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "linkzlyServerConfigReceived",
+            "printedName": "linkzlyServerConfigReceived",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea7LinkzlyE27linkzlyServerConfigReceivedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea7LinkzlyE27linkzlyServerConfigReceivedABvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea7LinkzlyE27linkzlyServerConfigReceivedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea7LinkzlyE27linkzlyServerConfigReceivedABvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@T@NSNotificationName",
+        "moduleName": "Foundation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "Sendable"
+        ],
+        "isFromExtension": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_SwiftNewtypeWrapper",
+            "printedName": "_SwiftNewtypeWrapper",
+            "usr": "s:s20_SwiftNewtypeWrapperP",
+            "mangledName": "$ss20_SwiftNewtypeWrapperP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "FloatLiteral",
+      "offset": 391,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 433,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 598,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 603,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 660,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 696,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "Dictionary",
+      "offset": 561,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3356,
+      "length": 155,
+      "value": "\"DeepLinkData(url: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3384,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3390,
+      "length": 1,
+      "value": "\", path: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3408,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3414,
+      "length": 1,
+      "value": "\", smartLinkId: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3446,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3452,
+      "length": 1,
+      "value": "\", clickId: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3476,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3482,
+      "length": 1,
+      "value": "\", parameters: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 3509,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "StringLiteral",
+      "offset": 93,
+      "length": 9,
+      "value": "\"install\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "StringLiteral",
+      "offset": 119,
+      "length": 6,
+      "value": "\"open\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "StringLiteral",
+      "offset": 146,
+      "length": 10,
+      "value": "\"purchase\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "StringLiteral",
+      "offset": 175,
+      "length": 8,
+      "value": "\"custom\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "Dictionary",
+      "offset": 971,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4117,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 24,
+      "value": "\"linkzly_pending_events\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 29,
+      "value": "\"linkzly_server_batch_config\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 184,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "Dictionary",
+      "offset": 12171,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 24584,
+      "length": 30,
+      "value": "\"LinkzlyUniversalLinkReceived\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 24679,
+      "length": 29,
+      "value": "\"LinkzlyDeepLinkDataReceived\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 24773,
+      "length": 29,
+      "value": "\"LinkzlyServerConfigReceived\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "Dictionary",
+      "offset": 26124,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}
