@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LinkzlySDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Linkzly iOS SDK for deep linking and attribution tracking'
   s.description      = <<-DESC
 LinkzlySDK is a powerful iOS SDK for deep linking, attribution tracking, and analytics.

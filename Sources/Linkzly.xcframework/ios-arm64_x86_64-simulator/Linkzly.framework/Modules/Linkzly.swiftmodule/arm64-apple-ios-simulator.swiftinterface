@@ -7,7 +7,6 @@ import AppTrackingTransparency
 import CoreTelephony
 import Foundation
 import Network
-import Security
 import StoreKit
 import Swift
 import UIKit
@@ -227,13 +226,13 @@ public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionDat
   @available(iOS 16.1, *)
   public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, lockWindow: Swift.Bool, completion: @escaping (Swift.Bool) -> Swift.Void)
   @discardableResult
-  public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
+  @objc public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
   public static func getAffiliateAttribution() -> Linkzly.AffiliateAttribution
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func getAffiliateClickId() -> Swift.String?
+  @objc public static func getAffiliateClickId() -> Swift.String?
   #endif
-  public static func hasAffiliateAttribution() -> Swift.Bool
-  public static func clearAffiliateAttribution()
+  @objc public static func hasAffiliateAttribution() -> Swift.Bool
+  @objc public static func clearAffiliateAttribution()
   @objc deinit
 }
 extension Foundation.NSNotification.Name {

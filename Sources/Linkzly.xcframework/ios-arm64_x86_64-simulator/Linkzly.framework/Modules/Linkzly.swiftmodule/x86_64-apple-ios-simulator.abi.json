@@ -1442,13 +1442,6 @@
         "moduleName": "Linkzly"
       },
       {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "Linkzly"
-      },
-      {
         "kind": "TypeDecl",
         "name": "AffiliateAttribution",
         "printedName": "AffiliateAttribution",
@@ -5605,13 +5598,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Linkzly0A3SDKC27captureAffiliateAttribution4fromSb10Foundation3URLV_tFZ",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)captureAffiliateAttributionFrom:",
             "mangledName": "$s7Linkzly0A3SDKC27captureAffiliateAttribution4fromSb10Foundation3URLV_tFZ",
             "moduleName": "Linkzly",
             "static": true,
+            "objc_name": "captureAffiliateAttributionFrom:",
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "DiscardableResult",
               "RawDocComment"
             ],
@@ -5662,13 +5657,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Linkzly0A3SDKC19getAffiliateClickIdSSSgyFZ",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)getAffiliateClickId",
             "mangledName": "$s7Linkzly0A3SDKC19getAffiliateClickIdSSSgyFZ",
             "moduleName": "Linkzly",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -5686,13 +5682,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Linkzly0A3SDKC23hasAffiliateAttributionSbyFZ",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)hasAffiliateAttribution",
             "mangledName": "$s7Linkzly0A3SDKC23hasAffiliateAttributionSbyFZ",
             "moduleName": "Linkzly",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -5709,13 +5706,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Linkzly0A3SDKC25clearAffiliateAttributionyyFZ",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)clearAffiliateAttribution",
             "mangledName": "$s7Linkzly0A3SDKC25clearAffiliateAttributionyyFZ",
             "moduleName": "Linkzly",
             "static": true,
             "declAttributes": [
               "Final",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -6620,77 +6618,77 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 838,
       "length": 11,
       "value": "\"deep_link\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 868,
       "length": 8,
       "value": "\"stored\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 909,
+      "offset": 893,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 1790,
       "length": 23,
       "value": "\"com.linkzly.affiliate\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 1866,
+      "offset": 1850,
       "length": 13,
       "value": "\"lz_click_id\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 1918,
+      "offset": 1902,
       "length": 15,
       "value": "\"lz_program_id\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 1974,
+      "offset": 1958,
       "length": 17,
       "value": "\"lz_affiliate_id\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 2030,
+      "offset": 2014,
       "length": 19,
       "value": "\"lz_attribution_ts\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 2085,
+      "offset": 2069,
       "length": 23,
       "value": "\"lz_attribution_expiry\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 2262,
+      "offset": 2246,
       "length": 14,
       "value": "\"linkzly_aff_\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
-      "offset": 8451,
+      "offset": 8435,
       "length": 37,
       "value": "\"linkzlyAffiliateAttributionCaptured\""
     },
@@ -6732,35 +6730,35 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 12697,
+      "offset": 12705,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26453,
+      "offset": 26490,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26548,
+      "offset": 26585,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26642,
+      "offset": 26679,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 27993,
+      "offset": 28030,
       "length": 3,
       "value": "[]"
     }
