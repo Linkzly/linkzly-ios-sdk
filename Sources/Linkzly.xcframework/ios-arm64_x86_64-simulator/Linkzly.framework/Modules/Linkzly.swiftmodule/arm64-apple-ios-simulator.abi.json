@@ -1443,6 +1443,876 @@
       },
       {
         "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AffiliateAttribution",
+        "printedName": "AffiliateAttribution",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clickId",
+            "printedName": "clickId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV7clickIdSSSgvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV7clickIdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV7clickIdSSSgvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV7clickIdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "programId",
+            "printedName": "programId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV9programIdSSSgvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV9programIdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV9programIdSSSgvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV9programIdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "affiliateId",
+            "printedName": "affiliateId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV11affiliateIdSSSgvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV11affiliateIdSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV11affiliateIdSSSgvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV11affiliateIdSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV9timestampSiSgvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV9timestampSiSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV9timestampSiSgvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV9timestampSiSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AffiliateAttributionSource",
+                "printedName": "Linkzly.AffiliateAttributionSource",
+                "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV6sourceAA0bC6SourceOvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV6sourceAA0bC6SourceOvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AffiliateAttributionSource",
+                    "printedName": "Linkzly.AffiliateAttributionSource",
+                    "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV6sourceAA0bC6SourceOvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV6sourceAA0bC6SourceOvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasAttribution",
+            "printedName": "hasAttribution",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly20AffiliateAttributionV03hasC0Sbvp",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV03hasC0Sbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly20AffiliateAttributionV03hasC0Sbvg",
+                "mangledName": "$s7Linkzly20AffiliateAttributionV03hasC0Sbvg",
+                "moduleName": "Linkzly",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AffiliateAttribution",
+                "printedName": "Linkzly.AffiliateAttribution",
+                "usr": "s:7Linkzly20AffiliateAttributionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly20AffiliateAttributionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly20AffiliateAttributionV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7Linkzly20AffiliateAttributionV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7Linkzly20AffiliateAttributionV",
+        "mangledName": "$s7Linkzly20AffiliateAttributionV",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AffiliateAttributionSource",
+        "printedName": "AffiliateAttributionSource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "deepLink",
+            "printedName": "deepLink",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.AffiliateAttributionSource.Type) -> Linkzly.AffiliateAttributionSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AffiliateAttributionSource",
+                    "printedName": "Linkzly.AffiliateAttributionSource",
+                    "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.AffiliateAttributionSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AffiliateAttributionSource",
+                        "printedName": "Linkzly.AffiliateAttributionSource",
+                        "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly26AffiliateAttributionSourceO8deepLinkyA2CmF",
+            "mangledName": "$s7Linkzly26AffiliateAttributionSourceO8deepLinkyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "stored",
+            "printedName": "stored",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.AffiliateAttributionSource.Type) -> Linkzly.AffiliateAttributionSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AffiliateAttributionSource",
+                    "printedName": "Linkzly.AffiliateAttributionSource",
+                    "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.AffiliateAttributionSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AffiliateAttributionSource",
+                        "printedName": "Linkzly.AffiliateAttributionSource",
+                        "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly26AffiliateAttributionSourceO6storedyA2CmF",
+            "mangledName": "$s7Linkzly26AffiliateAttributionSourceO6storedyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.AffiliateAttributionSource.Type) -> Linkzly.AffiliateAttributionSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AffiliateAttributionSource",
+                    "printedName": "Linkzly.AffiliateAttributionSource",
+                    "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.AffiliateAttributionSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AffiliateAttributionSource",
+                        "printedName": "Linkzly.AffiliateAttributionSource",
+                        "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly26AffiliateAttributionSourceO4noneyA2CmF",
+            "mangledName": "$s7Linkzly26AffiliateAttributionSourceO4noneyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.AffiliateAttributionSource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AffiliateAttributionSource",
+                    "printedName": "Linkzly.AffiliateAttributionSource",
+                    "usr": "s:7Linkzly26AffiliateAttributionSourceO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly26AffiliateAttributionSourceO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7Linkzly26AffiliateAttributionSourceO8rawValueACSgSS_tcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly26AffiliateAttributionSourceO8rawValueSSvp",
+            "mangledName": "$s7Linkzly26AffiliateAttributionSourceO8rawValueSSvp",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly26AffiliateAttributionSourceO8rawValueSSvg",
+                "mangledName": "$s7Linkzly26AffiliateAttributionSourceO8rawValueSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7Linkzly26AffiliateAttributionSourceO",
+        "mangledName": "$s7Linkzly26AffiliateAttributionSourceO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AffiliateService",
+        "printedName": "AffiliateService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "captureAttribution",
+            "printedName": "captureAttribution(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16AffiliateServiceC18captureAttribution4fromSb10Foundation3URLV_tFZ",
+            "mangledName": "$s7Linkzly16AffiliateServiceC18captureAttribution4fromSb10Foundation3URLV_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAttribution",
+            "printedName": "getAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AffiliateAttribution",
+                "printedName": "Linkzly.AffiliateAttribution",
+                "usr": "s:7Linkzly20AffiliateAttributionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16AffiliateServiceC14getAttributionAA0bE0VyFZ",
+            "mangledName": "$s7Linkzly16AffiliateServiceC14getAttributionAA0bE0VyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getClickId",
+            "printedName": "getClickId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16AffiliateServiceC10getClickIdSSSgyFZ",
+            "mangledName": "$s7Linkzly16AffiliateServiceC10getClickIdSSSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasAttribution",
+            "printedName": "hasAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16AffiliateServiceC14hasAttributionSbyFZ",
+            "mangledName": "$s7Linkzly16AffiliateServiceC14hasAttributionSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAttribution",
+            "printedName": "clearAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly16AffiliateServiceC16clearAttributionyyFZ",
+            "mangledName": "$s7Linkzly16AffiliateServiceC16clearAttributionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7Linkzly16AffiliateServiceC",
+        "mangledName": "$s7Linkzly16AffiliateServiceC",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1734,9 +2604,266 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV5errorSSSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV5errorSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV5errorSSSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV5errorSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV7messageSSSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV7messageSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV7messageSSSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV7messageSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV4codeSSSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV4codeSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV4codeSSSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV4codeSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "invalidKeys",
+            "printedName": "invalidKeys",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly16TrackingResponseV11invalidKeysSaySSGSgvp",
+            "mangledName": "$s7Linkzly16TrackingResponseV11invalidKeysSaySSGSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly16TrackingResponseV11invalidKeysSaySSGSgvg",
+                "mangledName": "$s7Linkzly16TrackingResponseV11invalidKeysSaySSGSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(success:eventId:deepLinkData:attribution:)",
+            "printedName": "init(success:eventId:deepLinkData:attribution:error:message:code:invalidKeys:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1805,11 +2932,79 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attributionACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgtcfc",
-            "mangledName": "$s7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attributionACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgtcfc",
+            "usr": "s:7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attribution5error7message4code11invalidKeysACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgA3LSaySSGSgtcfc",
+            "mangledName": "$s7Linkzly16TrackingResponseV7success7eventId12deepLinkData11attribution5error7message4code11invalidKeysACSb_SSSgSDySSAA10AnyCodableVGSgAC011AttributionI0VSgA3LSaySSGSgtcfc",
             "moduleName": "Linkzly",
             "declAttributes": [
               "AccessControl"
@@ -4392,6 +5587,140 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "captureAffiliateAttribution",
+            "printedName": "captureAffiliateAttribution(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC27captureAffiliateAttribution4fromSb10Foundation3URLV_tFZ",
+            "mangledName": "$s7Linkzly0A3SDKC27captureAffiliateAttribution4fromSb10Foundation3URLV_tFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAffiliateAttribution",
+            "printedName": "getAffiliateAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AffiliateAttribution",
+                "printedName": "Linkzly.AffiliateAttribution",
+                "usr": "s:7Linkzly20AffiliateAttributionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC23getAffiliateAttributionAA0dE0VyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC23getAffiliateAttributionAA0dE0VyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAffiliateClickId",
+            "printedName": "getAffiliateClickId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC19getAffiliateClickIdSSSgyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC19getAffiliateClickIdSSSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasAffiliateAttribution",
+            "printedName": "hasAffiliateAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC23hasAffiliateAttributionSbyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC23hasAffiliateAttributionSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearAffiliateAttribution",
+            "printedName": "clearAffiliateAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC25clearAffiliateAttributionyyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC25clearAffiliateAttributionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -4799,6 +6128,54 @@
         "name": "Name",
         "printedName": "Name",
         "children": [
+          {
+            "kind": "Var",
+            "name": "linkzlyAffiliateAttributionCaptured",
+            "printedName": "linkzlyAffiliateAttributionCaptured",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea7LinkzlyE35linkzlyAffiliateAttributionCapturedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea7LinkzlyE35linkzlyAffiliateAttributionCapturedABvpZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea7LinkzlyE35linkzlyAffiliateAttributionCapturedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea7LinkzlyE35linkzlyAffiliateAttributionCapturedABvgZ",
+                "moduleName": "Linkzly",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "linkzlyUniversalLinkReceived",
@@ -5241,6 +6618,83 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 11,
+      "value": "\"deep_link\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 8,
+      "value": "\"stored\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 909,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 1806,
+      "length": 23,
+      "value": "\"com.linkzly.affiliate\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 1866,
+      "length": 13,
+      "value": "\"lz_click_id\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 1918,
+      "length": 15,
+      "value": "\"lz_program_id\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 1974,
+      "length": 17,
+      "value": "\"lz_affiliate_id\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 2030,
+      "length": 19,
+      "value": "\"lz_attribution_ts\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 2085,
+      "length": 23,
+      "value": "\"lz_attribution_expiry\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 2262,
+      "length": 14,
+      "value": "\"linkzly_aff_\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
+      "kind": "StringLiteral",
+      "offset": 8451,
+      "length": 37,
+      "value": "\"linkzlyAffiliateAttributionCaptured\""
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
       "kind": "StringLiteral",
       "offset": 310,
@@ -5278,35 +6732,35 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 12171,
+      "offset": 12697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 24584,
+      "offset": 26453,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 24679,
+      "offset": 26548,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 24773,
+      "offset": 26642,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 26124,
+      "offset": 27993,
       "length": 3,
       "value": "[]"
     }

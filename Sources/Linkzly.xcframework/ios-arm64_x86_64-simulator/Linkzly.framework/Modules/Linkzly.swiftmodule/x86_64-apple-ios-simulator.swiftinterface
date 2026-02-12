@@ -7,6 +7,7 @@ import AppTrackingTransparency
 import CoreTelephony
 import Foundation
 import Network
+import Security
 import StoreKit
 import Swift
 import UIKit
@@ -67,13 +68,55 @@ public struct AnyCodable : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
+public struct AffiliateAttribution : Swift.Codable {
+  public let clickId: Swift.String?
+  public let programId: Swift.String?
+  public let affiliateId: Swift.String?
+  public let timestamp: Swift.Int?
+  public let source: Linkzly.AffiliateAttributionSource
+  public var hasAttribution: Swift.Bool {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AffiliateAttributionSource : Swift.String, Swift.Codable {
+  case deepLink
+  case stored
+  case none
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class AffiliateService {
+  @discardableResult
+  public static func captureAttribution(from url: Foundation.URL) -> Swift.Bool
+  public static func getAttribution() -> Linkzly.AffiliateAttribution
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getClickId() -> Swift.String?
+  #endif
+  public static func hasAttribution() -> Swift.Bool
+  public static func clearAttribution()
+  @objc deinit
+}
+extension Foundation.NSNotification.Name {
+  public static let linkzlyAffiliateAttributionCaptured: Foundation.Notification.Name
+}
 public struct TrackingResponse : Swift.Codable {
   public let success: Swift.Bool
   public let eventId: Swift.String?
   public let deepLinkData: [Swift.String : Linkzly.AnyCodable]?
   public let attribution: Linkzly.TrackingResponse.AttributionData?
+  public let error: Swift.String?
+  public let message: Swift.String?
+  public let code: Swift.String?
+  public let invalidKeys: [Swift.String]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(success: Swift.Bool, eventId: Swift.String?, deepLinkData: [Swift.String : Linkzly.AnyCodable]?, attribution: Linkzly.TrackingResponse.AttributionData?)
+  public init(success: Swift.Bool, eventId: Swift.String?, deepLinkData: [Swift.String : Linkzly.AnyCodable]?, attribution: Linkzly.TrackingResponse.AttributionData?, error: Swift.String? = nil, message: Swift.String? = nil, code: Swift.String? = nil, invalidKeys: [Swift.String]? = nil)
   #endif
   public struct AttributionData : Swift.Codable {
     public let smartLinkId: Swift.String
@@ -183,6 +226,14 @@ public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionDat
   public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, completion: @escaping (Swift.Bool) -> Swift.Void)
   @available(iOS 16.1, *)
   public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, lockWindow: Swift.Bool, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @discardableResult
+  public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
+  public static func getAffiliateAttribution() -> Linkzly.AffiliateAttribution
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getAffiliateClickId() -> Swift.String?
+  #endif
+  public static func hasAffiliateAttribution() -> Swift.Bool
+  public static func clearAffiliateAttribution()
   @objc deinit
 }
 extension Foundation.NSNotification.Name {
@@ -206,6 +257,9 @@ extension Foundation.NSNotification.Name {
 extension Linkzly.EventType : Swift.Equatable {}
 extension Linkzly.EventType : Swift.Hashable {}
 extension Linkzly.EventType : Swift.RawRepresentable {}
+extension Linkzly.AffiliateAttributionSource : Swift.Equatable {}
+extension Linkzly.AffiliateAttributionSource : Swift.Hashable {}
+extension Linkzly.AffiliateAttributionSource : Swift.RawRepresentable {}
 extension Linkzly.Environment : Swift.Equatable {}
 extension Linkzly.Environment : Swift.Hashable {}
 extension Linkzly.Environment : Swift.RawRepresentable {}
