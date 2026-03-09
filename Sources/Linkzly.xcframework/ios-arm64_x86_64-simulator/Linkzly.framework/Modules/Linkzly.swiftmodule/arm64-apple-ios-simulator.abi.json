@@ -13,6 +13,2337 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkzlyGamingFlushReason",
+        "printedName": "LinkzlyGamingFlushReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "batchFull",
+            "printedName": "batchFull",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonBatchFull",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO9batchFullyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "timeInterval",
+            "printedName": "timeInterval",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonTimeInterval",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO12timeIntervalyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "sessionEnd",
+            "printedName": "sessionEnd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonSessionEnd",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO10sessionEndyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "appBackground",
+            "printedName": "appBackground",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonAppBackground",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO13appBackgroundyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "manualFlush",
+            "printedName": "manualFlush",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonManualFlush",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO06manualC0yA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "queueOverflow",
+            "printedName": "queueOverflow",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonQueueOverflow",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO13queueOverflowyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "errorRecovery",
+            "printedName": "errorRecovery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonErrorRecovery",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO13errorRecoveryyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "startupRecovery",
+            "printedName": "startupRecovery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingFlushReason.Type) -> Linkzly.LinkzlyGamingFlushReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LinkzlyGamingFlushReason",
+                        "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason@LinkzlyGamingFlushReasonStartupRecovery",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO15startupRecoveryyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlyGamingFlushReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingFlushReason",
+                    "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                    "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly0A17GamingFlushReasonO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO8rawValueACSgSi_tcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly0A17GamingFlushReasonO8rawValueSivp",
+            "mangledName": "$s7Linkzly0A17GamingFlushReasonO8rawValueSivp",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A17GamingFlushReasonO8rawValueSivg",
+                "mangledName": "$s7Linkzly0A17GamingFlushReasonO8rawValueSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason",
+        "mangledName": "$s7Linkzly0A17GamingFlushReasonO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkzlyGamingOptions",
+        "printedName": "LinkzlyGamingOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)baseURL",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC7baseURLSSvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)baseURL",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC7baseURLSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setBaseURL:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC7baseURLSSvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC7baseURLSSvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC7baseURLSSvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endpointPath",
+            "printedName": "endpointPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)endpointPath",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC12endpointPathSSvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)endpointPath",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12endpointPathSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setEndpointPath:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12endpointPathSSvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC12endpointPathSSvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12endpointPathSSvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)sdkVersion",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC10sdkVersionSSvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)sdkVersion",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10sdkVersionSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setSdkVersion:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10sdkVersionSSvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC10sdkVersionSSvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10sdkVersionSSvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gameVersion",
+            "printedName": "gameVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)gameVersion",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC11gameVersionSSvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)gameVersion",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC11gameVersionSSvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setGameVersion:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC11gameVersionSSvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC11gameVersionSSvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC11gameVersionSSvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "includeTraits",
+            "printedName": "includeTraits",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)includeTraits",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC13includeTraitsSbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)includeTraits",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13includeTraitsSbvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setIncludeTraits:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13includeTraitsSbvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC13includeTraitsSbvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13includeTraitsSbvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)debug",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC5debugSbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)debug",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC5debugSbvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setDebug:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC5debugSbvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC5debugSbvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC5debugSbvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxBatchSize",
+            "printedName": "maxBatchSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)maxBatchSize",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC12maxBatchSizeSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)maxBatchSize",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxBatchSizeSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setMaxBatchSize:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxBatchSizeSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC12maxBatchSizeSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxBatchSizeSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxBatchBytes",
+            "printedName": "maxBatchBytes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)maxBatchBytes",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC13maxBatchBytesSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)maxBatchBytes",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13maxBatchBytesSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setMaxBatchBytes:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13maxBatchBytesSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC13maxBatchBytesSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13maxBatchBytesSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "flushIntervalMs",
+            "printedName": "flushIntervalMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)flushIntervalMs",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC15flushIntervalMsSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)flushIntervalMs",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC15flushIntervalMsSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setFlushIntervalMs:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC15flushIntervalMsSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC15flushIntervalMsSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC15flushIntervalMsSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxRetries",
+            "printedName": "maxRetries",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)maxRetries",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC10maxRetriesSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)maxRetries",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10maxRetriesSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setMaxRetries:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10maxRetriesSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC10maxRetriesSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC10maxRetriesSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "retryDelayMs",
+            "printedName": "retryDelayMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)retryDelayMs",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC12retryDelayMsSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)retryDelayMs",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12retryDelayMsSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setRetryDelayMs:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12retryDelayMsSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC12retryDelayMsSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12retryDelayMsSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxQueueSize",
+            "printedName": "maxQueueSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)maxQueueSize",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC12maxQueueSizeSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)maxQueueSize",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxQueueSizeSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setMaxQueueSize:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxQueueSizeSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC12maxQueueSizeSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC12maxQueueSizeSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sessionTimeoutMs",
+            "printedName": "sessionTimeoutMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)sessionTimeoutMs",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC16sessionTimeoutMsSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)sessionTimeoutMs",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC16sessionTimeoutMsSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setSessionTimeoutMs:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC16sessionTimeoutMsSivs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC16sessionTimeoutMsSivM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC16sessionTimeoutMsSivM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "autoSessionTracking",
+            "printedName": "autoSessionTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)autoSessionTracking",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC19autoSessionTrackingSbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)autoSessionTracking",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC19autoSessionTrackingSbvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setAutoSessionTracking:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC19autoSessionTrackingSbvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC19autoSessionTrackingSbvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC19autoSessionTrackingSbvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "signingSecret",
+            "printedName": "signingSecret",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(py)signingSecret",
+            "mangledName": "$s7Linkzly0A13GamingOptionsC13signingSecretSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)signingSecret",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13signingSecretSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)setSigningSecret:",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13signingSecretSSSgvs",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly0A13GamingOptionsC13signingSecretSSSgvM",
+                "mangledName": "$s7Linkzly0A13GamingOptionsC13signingSecretSSSgvM",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkzlyGamingOptions",
+                "printedName": "Linkzly.LinkzlyGamingOptions",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions(im)init",
+            "mangledName": "$s7Linkzly0A13GamingOptionsCACycfc",
+            "moduleName": "Linkzly",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions",
+        "mangledName": "$s7Linkzly0A13GamingOptionsC",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkzlyGamingStatus",
+        "printedName": "LinkzlyGamingStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pendingEventCount",
+            "printedName": "pendingEventCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus(py)pendingEventCount",
+            "mangledName": "$s7Linkzly0A12GamingStatusC17pendingEventCountSivp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus(im)pendingEventCount",
+                "mangledName": "$s7Linkzly0A12GamingStatusC17pendingEventCountSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasInflightBatch",
+            "printedName": "hasInflightBatch",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus(py)hasInflightBatch",
+            "mangledName": "$s7Linkzly0A12GamingStatusC16hasInflightBatchSbvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus(im)hasInflightBatch",
+                "mangledName": "$s7Linkzly0A12GamingStatusC16hasInflightBatchSbvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkzlyGamingStatus",
+                "printedName": "Linkzly.LinkzlyGamingStatus",
+                "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus(im)init",
+            "mangledName": "$s7Linkzly0A12GamingStatusCACycfc",
+            "moduleName": "Linkzly",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus",
+        "mangledName": "$s7Linkzly0A12GamingStatusC",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5581,6 +7912,58 @@
           },
           {
             "kind": "Function",
+            "name": "initializePush",
+            "printedName": "initializePush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)initializePush",
+            "mangledName": "$s7Linkzly0A3SDKC14initializePushSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disablePush",
+            "printedName": "disablePush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)disablePush",
+            "mangledName": "$s7Linkzly0A3SDKC11disablePushSbyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "captureAffiliateAttribution",
             "printedName": "captureAffiliateAttribution(from:)",
             "children": [
@@ -5743,6 +8126,586 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configureGamingTracking",
+            "printedName": "configureGamingTracking(apiKey:organizationId:gameId:environment:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "Linkzly.Environment",
+                "usr": "c:@M@Linkzly@E@Environment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlyGamingOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingOptions",
+                    "printedName": "Linkzly.LinkzlyGamingOptions",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)configureGamingTrackingWithApiKey:organizationId:gameId:environment:options:",
+            "mangledName": "$s7Linkzly0A3SDKC23configureGamingTracking6apiKey14organizationId04gameI011environment7optionsySS_S2SAA11EnvironmentOAA0aD7OptionsCSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "configureGamingTrackingWithApiKey:organizationId:gameId:environment:options:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureGamingTracking",
+            "printedName": "configureGamingTracking(apiKey:organizationId:gameId:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.LinkzlyGamingOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingOptions",
+                    "printedName": "Linkzly.LinkzlyGamingOptions",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)configureGamingTrackingWithApiKey:organizationId:gameId:options:",
+            "mangledName": "$s7Linkzly0A3SDKC23configureGamingTracking6apiKey14organizationId04gameI07optionsySS_S2SAA0aD7OptionsCSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "configureGamingTrackingWithApiKey:organizationId:gameId:options:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifyGamingPlayer",
+            "printedName": "identifyGamingPlayer(_:traits:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)identifyGamingPlayer:traits:",
+            "mangledName": "$s7Linkzly0A3SDKC20identifyGamingPlayer_6traitsySS_SDySSypGSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetGamingTracking",
+            "printedName": "resetGamingTracking()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)resetGamingTracking",
+            "mangledName": "$s7Linkzly0A3SDKC19resetGamingTrackingyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startGamingSession",
+            "printedName": "startGamingSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)startGamingSession",
+            "mangledName": "$s7Linkzly0A3SDKC18startGamingSessionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endGamingSession",
+            "printedName": "endGamingSession()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)endGamingSession",
+            "mangledName": "$s7Linkzly0A3SDKC16endGamingSessionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackGamingEvent",
+            "printedName": "trackGamingEvent(_:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)trackGamingEvent:data:",
+            "mangledName": "$s7Linkzly0A3SDKC16trackGamingEvent_4dataySS_SDySSypGSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackGamingEventImmediate",
+            "printedName": "trackGamingEventImmediate(_:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)trackGamingEventImmediate:data:",
+            "mangledName": "$s7Linkzly0A3SDKC25trackGamingEventImmediate_4dataySS_SDySSypGSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flushGamingEvents",
+            "printedName": "flushGamingEvents(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LinkzlyGamingFlushReason",
+                "printedName": "Linkzly.LinkzlyGamingFlushReason",
+                "hasDefaultArg": true,
+                "usr": "c:@M@Linkzly@E@LinkzlyGamingFlushReason"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)flushGamingEvents:completion:",
+            "mangledName": "$s7Linkzly0A3SDKC17flushGamingEvents_10completionyAA0aD11FlushReasonO_ySb_s5Error_pSgtcSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setGamingAttribution",
+            "printedName": "setGamingAttribution(clickId:deferredDeepLink:metadata:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)setGamingAttributionWithClickId:deferredDeepLink:metadata:",
+            "mangledName": "$s7Linkzly0A3SDKC20setGamingAttribution7clickId16deferredDeepLink8metadataySSSg_AHSDySSypGSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "setGamingAttributionWithClickId:deferredDeepLink:metadata:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearGamingAttribution",
+            "printedName": "clearGamingAttribution()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)clearGamingAttribution",
+            "mangledName": "$s7Linkzly0A3SDKC22clearGamingAttributionyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGamingStatus",
+            "printedName": "getGamingStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.LinkzlyGamingStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LinkzlyGamingStatus",
+                    "printedName": "Linkzly.LinkzlyGamingStatus",
+                    "usr": "c:@M@Linkzly@objc(cs)LinkzlyGamingStatus"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Linkzly@objc(cs)LinkzlySDK(cm)getGamingStatus:",
+            "mangledName": "$s7Linkzly0A3SDKC15getGamingStatusyyyAA0adE0CcFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -6441,6 +9404,209 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 275,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 352,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 377,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 404,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 431,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 460,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 1084,
+      "length": 23,
+      "value": "\"\/api\/v1\/gaming\/events\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 1150,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1247,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1288,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1382,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1428,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1483,
+      "length": 5,
+      "value": "5000"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1528,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1571,
+      "length": 5,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1618,
+      "length": 6,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1670,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1675,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1680,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1735,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 11562,
+      "length": 20,
+      "value": "\"com.linkzly.gaming\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "StringLiteral",
+      "offset": 15325,
+      "length": 24,
+      "value": "\"com.linkzly.sdk.gaming\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15607,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Gaming\/LinkzlyGamingTracking.swift",
+      "kind": "Array",
+      "offset": 15702,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 341,
@@ -6737,28 +9903,28 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26490,
+      "offset": 29386,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26585,
+      "offset": 29481,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 26679,
+      "offset": 29575,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 28030,
+      "offset": 30926,
       "length": 3,
       "value": "[]"
     }

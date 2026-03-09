@@ -1,10 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Linkzly
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AdSupport
 import AppTrackingTransparency
+import CommonCrypto
 import CoreTelephony
+import CryptoKit
 import Foundation
 import Network
 import StoreKit
@@ -15,6 +17,75 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+@objc public enum LinkzlyGamingFlushReason : Swift.Int {
+  case batchFull = 0
+  case timeInterval = 1
+  case sessionEnd = 2
+  case appBackground = 3
+  case manualFlush = 4
+  case queueOverflow = 5
+  case errorRecovery = 6
+  case startupRecovery = 7
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class LinkzlyGamingOptions : ObjectiveC.NSObject {
+  @objc final public var baseURL: Swift.String
+  @objc final public var endpointPath: Swift.String
+  @objc final public var sdkVersion: Swift.String
+  @objc final public var gameVersion: Swift.String
+  @objc final public var includeTraits: Swift.Bool
+  @objc final public var debug: Swift.Bool
+  @objc final public var maxBatchSize: Swift.Int
+  @objc final public var maxBatchBytes: Swift.Int
+  @objc final public var flushIntervalMs: Swift.Int
+  @objc final public var maxRetries: Swift.Int
+  @objc final public var retryDelayMs: Swift.Int
+  @objc final public var maxQueueSize: Swift.Int
+  @objc final public var sessionTimeoutMs: Swift.Int
+  @objc final public var autoSessionTracking: Swift.Bool
+  @objc final public var signingSecret: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class LinkzlyGamingStatus : ObjectiveC.NSObject {
+  @objc final public let pendingEventCount: Swift.Int
+  @objc final public let hasInflightBatch: Swift.Bool
+  @objc deinit
+}
+extension Linkzly.LinkzlySDK {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, environment: Linkzly.Environment, options: Linkzly.LinkzlyGamingOptions?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, options: Linkzly.LinkzlyGamingOptions?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func identifyGamingPlayer(_ playerId: Swift.String, traits: [Swift.String : Any]? = nil)
+  #endif
+  @objc public static func resetGamingTracking()
+  @objc public static func startGamingSession()
+  @objc public static func endGamingSession()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func trackGamingEvent(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func trackGamingEventImmediate(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func flushGamingEvents(_ reason: Linkzly.LinkzlyGamingFlushReason = .manualFlush, completion: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func setGamingAttribution(clickId: Swift.String?, deferredDeepLink: Swift.String?, metadata: [Swift.String : Any]? = nil)
+  #endif
+  @objc public static func clearGamingAttribution()
+  @objc public static func getGamingStatus(_ completion: @escaping (Linkzly.LinkzlyGamingStatus) -> Swift.Void)
+}
 @objc public class DeepLinkData : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let url: Swift.String?
   @objc final public let path: Swift.String?
@@ -226,6 +297,10 @@ public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionDat
   @available(iOS 16.1, *)
   public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, lockWindow: Swift.Bool, completion: @escaping (Swift.Bool) -> Swift.Void)
   @discardableResult
+  @objc public static func initializePush() -> Swift.Bool
+  @discardableResult
+  @objc public static func disablePush() -> Swift.Bool
+  @discardableResult
   @objc public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
   public static func getAffiliateAttribution() -> Linkzly.AffiliateAttribution
   #if compiler(>=5.3) && $NonescapableTypes
@@ -253,6 +328,9 @@ extension Foundation.NSNotification.Name {
   @objc public static func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
   #endif
 }
+extension Linkzly.LinkzlyGamingFlushReason : Swift.Equatable {}
+extension Linkzly.LinkzlyGamingFlushReason : Swift.Hashable {}
+extension Linkzly.LinkzlyGamingFlushReason : Swift.RawRepresentable {}
 extension Linkzly.EventType : Swift.Equatable {}
 extension Linkzly.EventType : Swift.Hashable {}
 extension Linkzly.EventType : Swift.RawRepresentable {}
