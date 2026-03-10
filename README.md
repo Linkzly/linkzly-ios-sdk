@@ -14,6 +14,9 @@ LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Trac
 - 👤 **User Identification** - Associate events with specific users
 - 🔐 **Privacy-First** - Opt-in/opt-out tracking controls
 - 📱 **Advertising Identifiers** - IDFA, IDFV, and ATT framework support
+- 🤝 **Affiliate Attribution** - Track affiliate clicks with S2S postback support
+- 🔔 **Push Notifications** - Firebase Cloud Messaging integration
+- 🎮 **Gaming Intelligence** - Batch event tracking for games with session management
 - ⚡ **Lightweight** - Zero third-party dependencies
 - 🎨 **SwiftUI & UIKit** - Works with both frameworks
 - 🔧 **Objective-C Compatible** - Full Objective-C bridging support
@@ -584,6 +587,276 @@ if #available(iOS 16.1, *) {
 }
 ```
 
+### Affiliate Attribution Tracking
+
+Track affiliate clicks from deep links and retrieve attribution data for server-to-server (S2S) postback integration at checkout.
+
+**Capture Attribution from Deep Link Handler:**
+
+```swift
+import Linkzly
+
+// In your deep link handler (SwiftUI)
+LinkzlySDK.onUniversalLink { url, attributionData in
+    // Automatically captures affiliate click ID from URL
+    let captured = LinkzlySDK.captureAffiliateAttribution(from: url)
+    if captured {
+        print("Affiliate attribution captured from: \(url)")
+    }
+}
+
+// Or in AppDelegate
+func application(_ application: UIApplication,
+                continue userActivity: NSUserActivity,
+                restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    if let url = userActivity.webpageURL {
+        LinkzlySDK.captureAffiliateAttribution(from: url)
+    }
+    return LinkzlySDK.handleUniversalLink(userActivity)
+}
+```
+
+**Retrieve Click ID at Checkout (S2S Postback):**
+
+```swift
+// At checkout, retrieve the affiliate click ID for server-to-server attribution
+if let clickId = LinkzlySDK.getAffiliateClickId() {
+    // Send clickId to your server for S2S postback to the affiliate network
+    sendToServer(clickId: clickId, orderId: orderId, amount: amount)
+}
+
+// Get full attribution data
+if let attribution = LinkzlySDK.getAffiliateAttribution() {
+    print("Click ID: \(attribution.clickId)")
+    print("Network: \(attribution.network ?? "unknown")")
+    print("Campaign: \(attribution.campaign ?? "unknown")")
+}
+
+// Check if attribution exists
+if LinkzlySDK.hasAffiliateAttribution() {
+    // Show affiliate-specific checkout flow
+}
+
+// Clear attribution data (e.g., after successful conversion)
+LinkzlySDK.clearAffiliateAttribution()
+```
+
+**API Reference:**
+
+| Method | Return Type | Description |
+|--------|-------------|-------------|
+| `captureAffiliateAttribution(from: URL)` | `Bool` | Captures affiliate attribution from a deep link URL |
+| `getAffiliateClickId()` | `String?` | Returns the stored affiliate click ID |
+| `getAffiliateAttribution()` | `AffiliateAttribution?` | Returns full attribution data |
+| `hasAffiliateAttribution()` | `Bool` | Checks if attribution data exists |
+| `clearAffiliateAttribution()` | `Void` | Clears stored attribution data |
+
+**Storage & Expiry:**
+- Attribution data is stored securely in the Keychain (with UserDefaults fallback)
+- Data automatically expires after **30 days**
+- Only the most recent affiliate click is stored (newer clicks overwrite older ones)
+
+### Push Notification Support
+
+The SDK provides opt-in push notification support via Firebase Cloud Messaging (FCM). This allows your app to receive broadcast push notifications from the Linkzly platform.
+
+**Prerequisites:**
+- Firebase Cloud Messaging integrated in your app
+- Linkzly SDK configured and initialized
+
+**Setup (Swift):**
+
+```swift
+import Linkzly
+import FirebaseMessaging
+
+// In your AppDelegate or app initialization
+func application(_ application: UIApplication,
+                didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+    // 1. Configure Firebase first
+    FirebaseApp.configure()
+
+    // 2. Configure Linkzly SDK
+    LinkzlySDK.configure(sdkKey: "your_sdk_key", environment: .production)
+
+    // 3. Initialize push notifications
+    let success = LinkzlySDK.initializePush()
+    if success {
+        print("Push notifications initialized successfully")
+    }
+
+    return true
+}
+```
+
+**Setup (Objective-C):**
+
+```objc
+#import <Linkzly/Linkzly.h>
+@import FirebaseMessaging;
+
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [FIRApp configure];
+    [LinkzlySDK configureWithSdkKey:@"your_sdk_key" environment:LinkzlyEnvironmentProduction];
+
+    BOOL success = [LinkzlySDK initializePush];
+    NSLog(@"Push init: %@", success ? @"YES" : @"NO");
+
+    return YES;
+}
+```
+
+**Disabling Push Notifications:**
+
+```swift
+// Unsubscribe from Linkzly push notifications
+LinkzlySDK.disablePush()
+```
+
+**How It Works:**
+1. `initializePush()` subscribes the device to the Linkzly FCM broadcast topic
+2. The SDK uses runtime reflection to access Firebase Messaging — no Firebase dependency in the SDK itself
+3. Returns `false` safely if Firebase is not available in the app
+
+**Compatibility:**
+- Works alongside other push notification providers (OneSignal, Braze, Airship, etc.)
+- Does not interfere with your existing push notification setup
+- Only subscribes to Linkzly-specific FCM topics
+
+**Troubleshooting:**
+
+| Issue | Solution |
+|-------|----------|
+| `initializePush()` returns `false` | Ensure Firebase is configured before calling `initializePush()` |
+| No push notifications received | Verify FCM setup and APNs certificate configuration |
+| Conflict with other push providers | Linkzly uses topic-based messaging, which is independent of other providers |
+
+### Gaming Intelligence
+
+The Gaming Intelligence module provides high-performance batch event tracking designed for games. It includes automatic session management, event queuing with retry logic, and optional request signing.
+
+**Configuration:**
+
+```swift
+import Linkzly
+
+// Basic configuration
+LinkzlySDK.configureGamingTracking(
+    apiKey: "your_gaming_api_key",
+    organizationId: "your_org_id",
+    gameId: "your_game_id",
+    environment: .production,
+    options: nil
+)
+
+// Advanced configuration with options
+let options = LinkzlyGamingOptions()
+options.gameVersion = "1.2.0"
+options.maxBatchSize = 50
+options.flushIntervalMs = 10_000  // 10 seconds
+options.debug = true
+
+LinkzlySDK.configureGamingTracking(
+    apiKey: "your_gaming_api_key",
+    organizationId: "your_org_id",
+    gameId: "your_game_id",
+    environment: .production,
+    options: options
+)
+```
+
+**Player Identification:**
+
+```swift
+// Identify the current player
+LinkzlySDK.identifyGamingPlayer("player_12345", traits: [
+    "level": 42,
+    "vip_tier": "gold",
+    "registration_date": "2024-01-15"
+])
+
+// Reset player identification (e.g., on logout)
+LinkzlySDK.resetGamingTracking()
+```
+
+**Session Management:**
+
+```swift
+// Sessions are tracked automatically by default
+// Manual session control:
+LinkzlySDK.startGamingSession()
+LinkzlySDK.endGamingSession()
+```
+
+**Event Tracking:**
+
+```swift
+// Track a gaming event (batched and sent automatically)
+LinkzlySDK.trackGamingEvent("level_complete", data: [
+    "level": 5,
+    "score": 12500,
+    "time_seconds": 120,
+    "stars": 3
+])
+
+// Track a high-priority event (sent immediately, bypasses batching)
+LinkzlySDK.trackGamingEventImmediate("purchase", data: [
+    "item_id": "sword_of_fire",
+    "price": 4.99,
+    "currency": "USD"
+])
+```
+
+**Attribution:**
+
+```swift
+// Set attribution data for gaming events
+LinkzlySDK.setGamingAttribution(
+    clickId: "click_abc123",
+    deferredDeepLink: "https://yourgame.com/promo",
+    metadata: ["campaign": "summer_sale"]
+)
+
+// Clear attribution
+LinkzlySDK.clearGamingAttribution()
+```
+
+**Flush Management:**
+
+```swift
+// Manually flush queued events
+LinkzlySDK.flushGamingEvents { success, error in
+    if success {
+        print("Gaming events flushed successfully")
+    }
+}
+
+// Check queue status
+LinkzlySDK.getGamingStatus { status in
+    print("Pending events: \(status.pendingEventCount)")
+    print("Batch in flight: \(status.hasInflightBatch)")
+}
+```
+
+**Configuration Options:**
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `gameVersion` | `""` | Your game's version string |
+| `maxBatchSize` | `100` | Maximum events per batch |
+| `maxBatchBytes` | `512 KB` | Maximum batch size in bytes |
+| `flushIntervalMs` | `5,000` | Auto-flush interval in milliseconds |
+| `maxRetries` | `3` | Maximum retry attempts per batch |
+| `retryDelayMs` | `1,000` | Delay between retries in milliseconds |
+| `maxQueueSize` | `10,000` | Maximum events in queue |
+| `sessionTimeoutMs` | `1,800,000` | Session timeout (30 minutes) |
+| `autoSessionTracking` | `true` | Enable automatic session management |
+| `debug` | `false` | Enable debug logging |
+| `signingSecret` | `nil` | Optional HMAC signing secret for requests |
+
 ## Environments
 
 The SDK supports three environments:
@@ -635,6 +908,7 @@ The SDK posts NSNotification events for flexibility:
 |-------------|---------------|-------------|
 | `.linkzlyUniversalLinkReceived` | `url`, `attributionData` | Posted when a Universal Link is received |
 | `.linkzlyDeepLinkDataReceived` | `deepLinkData` | Posted when attribution data is available |
+| `.linkzlyAffiliateAttributionCaptured` | `affiliateAttribution` | Posted when affiliate attribution is captured from a deep link |
 | `.linkzlyServerConfigReceived` | Server config data | Posted when server configuration is received |
 
 ## DeepLinkData API
@@ -813,9 +1087,30 @@ The example app showcases:
 - Privacy controls and ATT permission requests
 - Advertising identifier collection
 
+## Changelog
+
+### v1.2
+- Added Affiliate Attribution Tracking (S2S postback support)
+- Added Push Notification Support (Firebase Cloud Messaging)
+- Added Gaming Intelligence Module (batch event tracking)
+
+### v1.1
+- Added IDFA/IDFV advertising identifier support
+- Added ATT (App Tracking Transparency) framework integration
+- Added two-tier consent model (platform + app level)
+- Improved UI in Example app
+- Activity Logs fixes
+
+### v1.0
+- Initial release
+- Universal Links support
+- Attribution tracking
+- Custom events
+- Privacy controls
+
 ## License
 
-[Add your license here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
