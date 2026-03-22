@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Cc2SQloTe5oUqMd0qvNsHomKnIo=
+		J8OJ8KkUNbNu//d2Ge1KTQ+m+oE=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7d/P89lTIgkAja1zN2vPSc85R3E=
+		aIuT4N1i8O94Vgv4PeTMzWtVFEc=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7d/P89lTIgkAja1zN2vPSc85R3E=
+		aIuT4N1i8O94Vgv4PeTMzWtVFEc=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6LzPfQN4fei+LgSuWCQSuFbuRV0=
+		a4+bymeCvD0ATTVOjq04yT0XVTI=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Cc2SQloTe5oUqMd0qvNsHomKnIo=
+		J8OJ8KkUNbNu//d2Ge1KTQ+m+oE=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MgB1a99RL8SmHxF+mQNx18AfNJI=
+		HnHKaH8icfA+ME19ZQcuxHKZqiw=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MgB1a99RL8SmHxF+mQNx18AfNJI=
+		HnHKaH8icfA+ME19ZQcuxHKZqiw=
 		</data>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MOcNo6YlWWbVI6VFHIG3Q+4daYg=
+		F2cP2EmVxaF6KoW4kbAA2t+jK08=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XUpxiPPqcfKfCRQ8gbKrBtiJ1NmRr5SOdnid9phXHzg=
+			4+UXOVDpb/1ADkoc32f8KpA+YJGv57s9mlf1jm6iFpE=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HXFb+Feqiuno6pkf+n0YVBDhXVunyc2jKqjPpDDSL+I=
+			1IUAasi1tbt0N07VJdPnxkzx5izCFjWpxON9fq3Pjy8=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HXFb+Feqiuno6pkf+n0YVBDhXVunyc2jKqjPpDDSL+I=
+			1IUAasi1tbt0N07VJdPnxkzx5izCFjWpxON9fq3Pjy8=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tyg8H9ELHsihkvqnD/G12OWr4cvY71kcgq+t2FXq+IA=
+			8/iLMjkt0oXZ8GUnH4aBcioWIzXBg+STTnL/7pzMVzI=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XUpxiPPqcfKfCRQ8gbKrBtiJ1NmRr5SOdnid9phXHzg=
+			4+UXOVDpb/1ADkoc32f8KpA+YJGv57s9mlf1jm6iFpE=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			35SBYrN3ZxgkoO0syo32WdNvssLOvZFszOseDuuN6+M=
+			+mBDo/wuM9TrYCskl4LgJHcdd0DGbDI5Lr+FHM73oBM=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			35SBYrN3ZxgkoO0syo32WdNvssLOvZFszOseDuuN6+M=
+			+mBDo/wuM9TrYCskl4LgJHcdd0DGbDI5Lr+FHM73oBM=
 			</data>
 		</dict>
 		<key>Modules/Linkzly.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ue3AOi4UbG41I6D1wfi9WTokle4a5TbdrtD1YHZVcUw=
+			8xbXFMhqzXAJTkg7eqs2u6nEFeHojNTSDrV2KCP+tcg=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

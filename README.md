@@ -35,6 +35,26 @@ LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Trac
 - Swift (primary, all examples below)
 - Objective-C (fully compatible)
 
+## Prerequisites
+
+Before integrating the SDK, set up your app in the Linkzly Console:
+
+1. Go to **Dashboard > Apps** and click "Register App"
+2. Enter your iOS **Bundle ID** and **Team ID**
+3. Choose a verification method (Hosted recommended for quick start)
+4. Copy your **SDK Key** from the post-creation wizard or from Manage App > Overview > SDK Configuration
+
+Your SDK key starts with `slk_` and uniquely identifies your app.
+
+## Getting Your SDK Key
+
+Your SDK key (`slk_` prefix) authenticates your app with Linkzly's servers. You can find it in:
+
+- **Post-creation wizard**: Displayed prominently right after creating your app
+- **Dashboard > Apps > Manage App > Overview > SDK Configuration**: Click the eye icon to reveal, or copy directly
+
+> **Note**: Each app has a unique SDK key. Do not share keys between different apps.
+
 ## Installation
 
 ### Swift Package Manager
@@ -90,7 +110,7 @@ struct YourApp: App {
     init() {
         // Configure SDK on app launch
         LinkzlySDK.configure(
-            sdkKey: "your_sdk_key_here",
+            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
             environment: .production
         )
 
@@ -153,7 +173,7 @@ import Linkzly
 struct YourApp: App {
     init() {
         LinkzlySDK.configure(
-            sdkKey: "your_sdk_key_here",
+            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
             environment: .production
         )
     }
@@ -185,7 +205,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         LinkzlySDK.configure(
-            sdkKey: "your_sdk_key_here",
+            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
             environment: .production
         )
 
@@ -202,13 +222,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ### 2. Setup Universal Links
 
-#### Add Associated Domains to Your App
+#### Using Linkzly Hosted Verification (Recommended)
+
+If you chose "Hosted Verification" when creating your app in the console, Linkzly automatically hosts your `apple-app-site-association` file. You only need to:
+
+1. In Xcode, select your target → **Signing & Capabilities**
+2. Click **+ Capability** → **Associated Domains**
+3. Add: `applinks:{your-prefix}.linkz.ly`
+
+Replace `{your-prefix}` with the brand prefix you chose in the Linkzly Console. That's it — no manual file hosting required!
+
+#### Self-Hosted Verification
+
+If you chose "Custom Domain Verification", follow these steps:
+
+##### Add Associated Domains to Your App
 
 1. In Xcode, select your target → **Signing & Capabilities**
 2. Click **+ Capability** → **Associated Domains**
 3. Add: `applinks:yourdomain.com`
 
-#### Create .apple-app-site-association File
+##### Create .apple-app-site-association File
 
 Create this file on your server at `https://yourdomain.com/.well-known/apple-app-site-association`:
 
@@ -678,7 +712,7 @@ func application(_ application: UIApplication,
     FirebaseApp.configure()
 
     // 2. Configure Linkzly SDK
-    LinkzlySDK.configure(sdkKey: "your_sdk_key", environment: .production)
+    LinkzlySDK.configure(sdkKey: "slk_your_key_from_console", environment: .production)
 
     // 3. Initialize push notifications
     let success = LinkzlySDK.initializePush()
@@ -700,7 +734,7 @@ func application(_ application: UIApplication,
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [FIRApp configure];
-    [LinkzlySDK configureWithSdkKey:@"your_sdk_key" environment:LinkzlyEnvironmentProduction];
+    [LinkzlySDK configureWithSdkKey:@"slk_your_key_from_console" environment:LinkzlyEnvironmentProduction];
 
     BOOL success = [LinkzlySDK initializePush];
     NSLog(@"Push init: %@", success ? @"YES" : @"NO");
@@ -1107,6 +1141,16 @@ The example app showcases:
 - Attribution tracking
 - Custom events
 - Privacy controls
+
+## Integration Checklist
+
+- [ ] Created app in Linkzly Console (Dashboard > Apps)
+- [ ] Copied SDK key from console
+- [ ] Added LinkzlySDK package via SPM
+- [ ] Called `LinkzlySDK.configure(sdkKey:config:)` in AppDelegate
+- [ ] Added Associated Domain (`applinks:{prefix}.linkz.ly`) in Xcode
+- [ ] Implemented Universal Link handling in AppDelegate
+- [ ] Verified integration in Linkzly Console (Manage App > Integration tab)
 
 ## License
 

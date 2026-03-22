@@ -3360,6 +3360,43 @@
             "moduleName": "Linkzly"
           },
           {
+            "kind": "Var",
+            "name": "sessionEnd",
+            "printedName": "sessionEnd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.EventType.Type) -> Linkzly.EventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EventType",
+                    "printedName": "Linkzly.EventType",
+                    "usr": "s:7Linkzly9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.EventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "EventType",
+                        "printedName": "Linkzly.EventType",
+                        "usr": "s:7Linkzly9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Linkzly9EventTypeO10sessionEndyA2CmF",
+            "mangledName": "$s7Linkzly9EventTypeO10sessionEndyA2CmF",
+            "moduleName": "Linkzly"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -7280,53 +7317,6 @@
           },
           {
             "kind": "Function",
-            "name": "startSession",
-            "printedName": "startSession()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)startSession",
-            "mangledName": "$s7Linkzly0A3SDKC12startSessionyyFZ",
-            "moduleName": "Linkzly",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "endSession",
-            "printedName": "endSession()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)endSession",
-            "mangledName": "$s7Linkzly0A3SDKC10endSessionyyFZ",
-            "moduleName": "Linkzly",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setTrackingEnabled",
             "printedName": "setTrackingEnabled(_:)",
             "children": [
@@ -9769,15 +9759,22 @@
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "StringLiteral",
+      "offset": 206,
+      "length": 13,
+      "value": "\"session_end\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
       "kind": "Dictionary",
-      "offset": 971,
+      "offset": 1007,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4117,
+      "offset": 4153,
       "length": 1,
       "value": "0"
     },
@@ -9896,35 +9893,35 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 12705,
+      "offset": 12697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 29386,
+      "offset": 28211,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 29481,
+      "offset": 28306,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 29575,
+      "offset": 28400,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 30926,
+      "offset": 29751,
       "length": 3,
       "value": "[]"
     }

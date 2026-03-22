@@ -120,6 +120,7 @@ public enum EventType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case open
   case purchase
   case custom
+  case sessionEnd
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -264,8 +265,6 @@ public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionDat
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getUserID() -> Swift.String?
   #endif
-  @objc public static func startSession()
-  @objc public static func endSession()
   @objc public static func setTrackingEnabled(_ enabled: Swift.Bool)
   @objc public static func isTrackingEnabled() -> Swift.Bool
   @objc public static func setAdvertisingTrackingEnabled(_ enabled: Swift.Bool)
