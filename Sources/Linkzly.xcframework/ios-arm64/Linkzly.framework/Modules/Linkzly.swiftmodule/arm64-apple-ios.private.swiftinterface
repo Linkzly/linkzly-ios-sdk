@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Linkzly
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Linkzly
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
@@ -9,6 +9,7 @@ import CoreTelephony
 import CryptoKit
 import Foundation
 import Network
+import Security
 import StoreKit
 import Swift
 import UIKit
@@ -26,9 +27,7 @@ import os
   case queueOverflow = 5
   case errorRecovery = 6
   case startupRecovery = 7
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -59,30 +58,16 @@ import os
   @objc deinit
 }
 extension Linkzly.LinkzlySDK {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, environment: Linkzly.Environment, options: Linkzly.LinkzlyGamingOptions?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, options: Linkzly.LinkzlyGamingOptions?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func identifyGamingPlayer(_ playerId: Swift.String, traits: [Swift.String : Any]? = nil)
-  #endif
   @objc public static func resetGamingTracking()
   @objc public static func startGamingSession()
   @objc public static func endGamingSession()
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackGamingEvent(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackGamingEventImmediate(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func flushGamingEvents(_ reason: Linkzly.LinkzlyGamingFlushReason = .manualFlush, completion: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setGamingAttribution(clickId: Swift.String?, deferredDeepLink: Swift.String?, metadata: [Swift.String : Any]? = nil)
-  #endif
   @objc public static func clearGamingAttribution()
   @objc public static func getGamingStatus(_ completion: @escaping (Linkzly.LinkzlyGamingStatus) -> Swift.Void)
 }
@@ -92,20 +77,12 @@ extension Linkzly.LinkzlySDK {
   @objc final public let smartLinkId: Swift.String?
   @objc final public let clickId: Swift.String?
   final public let parameters: [Swift.String : Any]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(url: Swift.String? = nil, path: Swift.String? = nil, smartLinkId: Swift.String? = nil, clickId: Swift.String? = nil, parameters: [Swift.String : Any] = [:])
-  #endif
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getParameter(_ key: Swift.String) -> Any?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getStringParameter(_ key: Swift.String) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getNumberParameter(_ key: Swift.String) -> Foundation.NSNumber?
-  #endif
   @objc public func getBoolParameter(_ key: Swift.String) -> Swift.Bool
   @objc public var allParameters: Foundation.NSDictionary {
     @objc get
@@ -121,9 +98,7 @@ public enum EventType : Swift.String, Swift.CaseIterable, Swift.Codable {
   case purchase
   case custom
   case sessionEnd
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [Linkzly.EventType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [Linkzly.EventType] {
@@ -155,9 +130,7 @@ public enum AffiliateAttributionSource : Swift.String, Swift.Codable {
   case deepLink
   case stored
   case none
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -167,9 +140,7 @@ public enum AffiliateAttributionSource : Swift.String, Swift.Codable {
   @discardableResult
   public static func captureAttribution(from url: Foundation.URL) -> Swift.Bool
   public static func getAttribution() -> Linkzly.AffiliateAttribution
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getClickId() -> Swift.String?
-  #endif
   public static func hasAttribution() -> Swift.Bool
   public static func clearAttribution()
   @objc deinit
@@ -186,17 +157,13 @@ public struct TrackingResponse : Swift.Codable {
   public let message: Swift.String?
   public let code: Swift.String?
   public let invalidKeys: [Swift.String]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(success: Swift.Bool, eventId: Swift.String?, deepLinkData: [Swift.String : Linkzly.AnyCodable]?, attribution: Linkzly.TrackingResponse.AttributionData?, error: Swift.String? = nil, message: Swift.String? = nil, code: Swift.String? = nil, invalidKeys: [Swift.String]? = nil)
-  #endif
   public struct AttributionData : Swift.Codable {
     public let smartLinkId: Swift.String
     public let clickId: Swift.String?
     public let confidence: Swift.Double
     public let attributionMethod: Swift.String?
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(smartLinkId: Swift.String, clickId: Swift.String?, confidence: Swift.Double, attributionMethod: Swift.String?)
-    #endif
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -207,9 +174,7 @@ public struct TrackingResponse : Swift.Codable {
   case production = 0
   case staging = 1
   case development = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -221,68 +186,42 @@ public enum LinkzlyError : Swift.Error, Foundation.LocalizedError {
   case networkError(any Swift.Error)
   case invalidResponse
   case noDeepLinkData
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public typealias DeepLinkHandler = (_ deepLinkData: Linkzly.DeepLinkData, _ url: Swift.String?) -> Swift.Void
 public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionData: [Swift.String : Any]) -> Swift.Void
 @_hasMissingDesignatedInitializers @objc public class LinkzlySDK : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static var shared: Linkzly.LinkzlySDK? {
     @objc get
   }
-  #endif
   @objc public static func configure(sdkKey: Swift.String, environment: Linkzly.Environment = .production)
   @objc public static func onDeepLink(_ handler: @escaping Linkzly.DeepLinkHandler)
   @objc public static func onUniversalLink(_ handler: @escaping Linkzly.UniversalLinkHandler)
   @objc public static func handleUniversalLink(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
   @objc(handleUniversalLinkWithURL:) public static func handleUniversalLink(_ url: Foundation.URL) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func trackInstall(completion: @escaping (Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func trackOpen(completion: @escaping (Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackEvent(_ eventName: Swift.String, parameters: [Swift.String : Any]? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func trackPurchase(parameters: [Swift.String : Any] = [:], completion: ((Swift.Result<Linkzly.TrackingResponse, any Swift.Error>) -> Swift.Void)? = nil) -> Linkzly.LinkzlySDK?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func flushEvents(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void) -> Linkzly.LinkzlySDK?
-  #endif
   public static func getPendingEventCount() -> Swift.Int
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackEventBatch(_ events: [[Swift.String : Any]], completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  #endif
   @objc public static func setUserID(_ userID: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getUserID() -> Swift.String?
-  #endif
   @objc public static func setTrackingEnabled(_ enabled: Swift.Bool)
   @objc public static func isTrackingEnabled() -> Swift.Bool
   @objc public static func setAdvertisingTrackingEnabled(_ enabled: Swift.Bool)
   @objc public static func isAdvertisingTrackingEnabled() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 14.5, *)
   public static func requestTrackingPermission(completion: @escaping (Swift.Result<AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, any Swift.Error>) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 14.5, *)
   @objc public static func requestTrackingPermissionObjC(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getIDFA() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getATTStatus() -> Swift.String?
-  #endif
   @objc public static func getVisitorID() -> Swift.String
   @objc public static func resetVisitorID()
   @available(iOS 14.0, *)
@@ -302,9 +241,7 @@ public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionDat
   @discardableResult
   @objc public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
   public static func getAffiliateAttribution() -> Linkzly.AffiliateAttribution
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getAffiliateClickId() -> Swift.String?
-  #endif
   @objc public static func hasAffiliateAttribution() -> Swift.Bool
   @objc public static func clearAffiliateAttribution()
   @objc deinit
@@ -316,16 +253,10 @@ extension Foundation.NSNotification.Name {
 }
 @objc extension Linkzly.LinkzlySDK {
   @objc public static func configure(sdkKey: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackInstallObjC(completion: @escaping (Linkzly.DeepLinkData?, (any Swift.Error)?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackOpenObjC(completion: @escaping (Linkzly.DeepLinkData?, (any Swift.Error)?) -> Swift.Void)
-  #endif
   @objc public static func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
-  #endif
 }
 extension Linkzly.LinkzlyGamingFlushReason : Swift.Equatable {}
 extension Linkzly.LinkzlyGamingFlushReason : Swift.Hashable {}
