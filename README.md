@@ -692,7 +692,59 @@ LinkzlySDK.clearAffiliateAttribution()
 
 ### Push Notification Support
 
-The SDK provides opt-in push notification support via Firebase Cloud Messaging (FCM). This allows your app to receive broadcast push notifications from the Linkzly platform.
+The SDK exposes **two independent push features** — most apps that target individual users want the first one:
+
+| Feature | Methods | What it does | When to use |
+|---|---|---|---|
+| **Device token registration** | `setNotificationToken` / `getNotificationToken` / `hasNotificationToken` / `clearNotificationToken` | Registers this device's **APNs/FCM token** in Linkzly's device registry so campaigns can target the specific device/user. Works with **any** push provider. | You want Linkzly to send (or target) notifications to individual devices/users. |
+| **Broadcast topic subscription** | `initializePush` / `disablePush` | Subscribes the device to a shared **FCM broadcast topic** for "send to All" campaigns. FCM-only, via runtime reflection. | You only need broadcast-to-everyone campaigns and use Firebase Cloud Messaging. |
+
+The two are not mutually exclusive, but they solve different problems. Start with **device token registration** below.
+
+#### Registering a device push token
+
+`setNotificationToken` records the device's push token in Linkzly's device registry (`/api/sdk/devices/register`). Call it whenever your app obtains or refreshes its APNs (or FCM) token — the SDK throttles network calls (it only re-registers when the token, user, or app version changes, or after 7 days), so it is safe to call on every launch.
+
+```swift
+// AppDelegate — after APNs registration succeeds
+func application(_ application: UIApplication,
+                 didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    let tokenString = deviceToken.map { String(format: "%02x", $0) }.joined()
+    LinkzlySDK.setNotificationToken(tokenString)
+}
+```
+
+If you use a push provider that vends a string token (FCM, OneSignal, etc.), pass that string directly to `setNotificationToken`.
+
+**Binding to a user:** when you call `LinkzlySDK.setUserID(...)`, the SDK automatically re-registers the stored token against the new user id, so campaigns can target that user.
+
+**On logout / notifications disabled:** clear the token. This removes it locally and revokes it server-side.
+
+```swift
+LinkzlySDK.clearNotificationToken()
+```
+
+**Inspecting state:**
+
+```swift
+let token = LinkzlySDK.getNotificationToken()   // String?
+let has   = LinkzlySDK.hasNotificationToken()   // Bool
+```
+
+> **Objective-C:** all four methods are exposed via `@objc` — `[LinkzlySDK setNotificationToken:tokenString]`, `[LinkzlySDK clearNotificationToken]`, etc.
+
+**API Reference:**
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `setNotificationToken(_ token: String)` | `Void` | Registers the device's APNs/FCM token in Linkzly's device registry (throttled) |
+| `getNotificationToken()` | `String?` | Returns the currently stored push token, if any |
+| `hasNotificationToken()` | `Bool` | Checks whether a push token is stored |
+| `clearNotificationToken()` | `Void` | Clears the token locally and revokes it server-side |
+
+#### Broadcast topic subscription (optional, FCM-only)
+
+Use this only if you want "send to All" broadcast campaigns and your app uses Firebase Cloud Messaging.
 
 **Prerequisites:**
 - Firebase Cloud Messaging integrated in your app
@@ -1125,7 +1177,7 @@ The example app showcases:
 
 ### v1.2
 - Added Affiliate Attribution Tracking (S2S postback support)
-- Added Push Notification Support (Firebase Cloud Messaging)
+- Added Push Notification Support — per-device token registration (`setNotificationToken`, any provider) and FCM broadcast topic subscription
 - Added Gaming Intelligence Module (batch event tracking)
 
 ### v1.1
@@ -1150,6 +1202,7 @@ The example app showcases:
 - [ ] Called `LinkzlySDK.configure(sdkKey:config:)` in AppDelegate
 - [ ] Added Associated Domain (`applinks:{prefix}.linkz.ly`) in Xcode
 - [ ] Implemented Universal Link handling in AppDelegate
+- [ ] Registered device push token via `setNotificationToken` (and cleared on logout)
 - [ ] Verified integration in Linkzly Console (Manage App > Integration tab)
 
 ## License
