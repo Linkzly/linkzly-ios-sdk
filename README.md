@@ -15,7 +15,7 @@ LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Trac
 - 🔐 **Privacy-First** - Opt-in/opt-out tracking controls
 - 📱 **Advertising Identifiers** - IDFA, IDFV, and ATT framework support
 - 🤝 **Affiliate Attribution** - Track affiliate clicks with S2S postback support
-- 🔔 **Push Notifications** - Firebase Cloud Messaging integration
+- 🔔 **Push Notifications** - Device token registration for any provider, plus FCM broadcast topics
 - 🎮 **Gaming Intelligence** - Batch event tracking for games with session management
 - ⚡ **Lightweight** - Zero third-party dependencies
 - 🎨 **SwiftUI & UIKit** - Works with both frameworks
@@ -697,7 +697,7 @@ The SDK exposes **two independent push features** — most apps that target indi
 | Feature | Methods | What it does | When to use |
 |---|---|---|---|
 | **Device token registration** | `setNotificationToken` / `getNotificationToken` / `hasNotificationToken` / `clearNotificationToken` | Registers this device's **APNs/FCM token** in Linkzly's device registry so campaigns can target the specific device/user. Works with **any** push provider. | You want Linkzly to send (or target) notifications to individual devices/users. |
-| **Broadcast topic subscription** | `initializePush` / `disablePush` | Subscribes the device to a shared **FCM broadcast topic** for "send to All" campaigns. FCM-only, via runtime reflection. | You only need broadcast-to-everyone campaigns and use Firebase Cloud Messaging. |
+| **Broadcast topic subscription** | `initializePush` / `disablePush` | Re-runs or reverses this device's subscription to its **per-(Smart App, platform) FCM topic** for "send to All" campaigns. The subscribe already happens **automatically** inside `setNotificationToken` — these are recovery / opt-out controls, not the mechanism. FCM-only, via runtime reflection. | Rarely: to opt back in after `disablePush()`, or to retry a subscribe Firebase was not ready for. |
 
 The two are not mutually exclusive, but they solve different problems. Start with **device token registration** below.
 
@@ -746,9 +746,16 @@ let has   = LinkzlySDK.hasNotificationToken()   // Bool
 
 Use this only if you want "send to All" broadcast campaigns and your app uses Firebase Cloud Messaging.
 
+> **Most apps never call these.** A successful `setNotificationToken` registration **already subscribes** the device to its broadcast topic, and the SDK re-subscribes to the stored topic on every launch. `initializePush()` only re-runs that subscribe; `disablePush()` reverses it.
+
 **Prerequisites:**
-- Firebase Cloud Messaging integrated in your app
+- Firebase Cloud Messaging integrated in your app, with `FirebaseApp.configure()` called **before** the token is registered
 - Linkzly SDK configured and initialized
+- A successful `setNotificationToken` registration (the topic name is returned by the register call)
+
+> **Note:** `initializePush()` and `disablePush()` are **Firebase Cloud Messaging only**. They subscribe/unsubscribe the device to its server-assigned FCM broadcast topic (`linkzly_broadcast_<smartAppId>_ios`) using runtime reflection. **`initializePush()` does nothing until token registration has succeeded** — it subscribes to the topic that registration stored, and returns `false` when there is none.
+>
+> If your app uses **OneSignal**, **Braze**, or another push provider, you do **not** need these methods for that provider's own delivery. Use `setNotificationToken` if you still want Linkzly to target the device.
 
 **Setup (Swift):**
 
@@ -756,25 +763,44 @@ Use this only if you want "send to All" broadcast campaigns and your app uses Fi
 import Linkzly
 import FirebaseMessaging
 
-// In your AppDelegate or app initialization
 func application(_ application: UIApplication,
                 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-    // 1. Configure Firebase first
+    // 1. Firebase first — it must be live before the token is registered,
+    //    or the topic subscribe is deferred to the next launch.
     FirebaseApp.configure()
 
-    // 2. Configure Linkzly SDK
+    // 2. Configure Linkzly
     LinkzlySDK.configure(sdkKey: "slk_your_key_from_console", environment: .production)
 
-    // 3. Initialize push notifications
-    let success = LinkzlySDK.initializePush()
-    if success {
-        print("Push notifications initialized successfully")
+    // 3. Ask for permission and register with APNs
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, _ in
+        guard granted else { return }
+        DispatchQueue.main.async { application.registerForRemoteNotifications() }
     }
 
     return true
 }
+
+// 4. This is what enables broadcasts: registration stores the topic and subscribes to it.
+func application(_ application: UIApplication,
+                didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    let tokenString = deviceToken.map { String(format: "%02x", $0) }.joined()
+    LinkzlySDK.setNotificationToken(tokenString)
+}
 ```
+
+> Calling `initializePush()` in `didFinishLaunchingWithOptions` returns `false` on a first launch — no registration has completed yet, so there is no topic to subscribe to.
+
+**When to call `initializePush()`:**
+
+```swift
+// Opt back in after a disablePush(), or retry a subscribe that
+// Firebase Messaging had not yet loaded for.
+let subscribed = LinkzlySDK.initializePush()
+```
+
+It returns `false` when the SDK is not configured, no topic is stored yet, or Firebase Messaging is unavailable.
 
 **Setup (Objective-C):**
 
@@ -787,25 +813,41 @@ func application(_ application: UIApplication,
 
     [FIRApp configure];
     [LinkzlySDK configureWithSdkKey:@"slk_your_key_from_console" environment:LinkzlyEnvironmentProduction];
-
-    BOOL success = [LinkzlySDK initializePush];
-    NSLog(@"Push init: %@", success ? @"YES" : @"NO");
+    [application registerForRemoteNotifications];
 
     return YES;
+}
+
+- (void)application:(UIApplication *)application
+    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
+    NSMutableString *token = [NSMutableString string];
+    const unsigned char *bytes = deviceToken.bytes;
+    for (NSUInteger i = 0; i < deviceToken.length; i++) {
+        [token appendFormat:@"%02x", bytes[i]];
+    }
+    [LinkzlySDK setNotificationToken:token];
 }
 ```
 
 **Disabling Push Notifications:**
 
 ```swift
-// Unsubscribe from Linkzly push notifications
+// Unsubscribe from the Linkzly broadcast topic
 LinkzlySDK.disablePush()
 ```
 
+> **`disablePush()` is session-scoped.** It unsubscribes from the broadcast topic but keeps the stored token and topic, so the next app launch re-subscribes. For a **durable** opt-out, clear the token instead — that unsubscribes, revokes the token server-side, and drops the stored topic:
+>
+> ```swift
+> LinkzlySDK.clearNotificationToken()
+> ```
+
 **How It Works:**
-1. `initializePush()` subscribes the device to the Linkzly FCM broadcast topic
-2. The SDK uses runtime reflection to access Firebase Messaging — no Firebase dependency in the SDK itself
-3. Returns `false` safely if Firebase is not available in the app
+1. `setNotificationToken` registers the device; the server returns its topic (`linkzly_broadcast_<smartAppId>_ios`), which the SDK stores and **subscribes to immediately**
+2. On every launch with a stored token, the SDK re-subscribes to the stored topic — so a subscribe that failed (for example, Firebase Messaging not yet loaded) self-heals on the next launch
+3. `initializePush()` performs that same subscribe on demand; it is a no-op returning `false` while no topic is stored
+4. Subscription uses runtime reflection — Firebase is not a compile dependency of the SDK
 
 **Compatibility:**
 - Works alongside other push notification providers (OneSignal, Braze, Airship, etc.)
@@ -816,8 +858,9 @@ LinkzlySDK.disablePush()
 
 | Issue | Solution |
 |-------|----------|
-| `initializePush()` returns `false` | Ensure Firebase is configured before calling `initializePush()` |
-| No push notifications received | Verify FCM setup and APNs certificate configuration |
+| `initializePush()` returns `false` | Expected before the first successful `setNotificationToken` — there is no topic yet. Otherwise: SDK not configured, or Firebase Messaging not linked into the app |
+| No push notifications received | Verify FCM setup and APNs certificate, and confirm `setNotificationToken` registration succeeded — without it the device holds no topic |
+| Broadcasts resume after `disablePush()` | Expected: `disablePush()` lasts the session only and the next launch re-subscribes. Use `clearNotificationToken()` for a durable opt-out |
 | Conflict with other push providers | Linkzly uses topic-based messaging, which is independent of other providers |
 
 ### Gaming Intelligence
