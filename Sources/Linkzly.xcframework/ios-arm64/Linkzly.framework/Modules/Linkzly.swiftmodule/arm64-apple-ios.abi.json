@@ -4840,6 +4840,67 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "broadcastTopic",
+            "printedName": "broadcastTopic",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly26DeviceRegistrationResponseV14broadcastTopicSSSgvp",
+            "mangledName": "$s7Linkzly26DeviceRegistrationResponseV14broadcastTopicSSSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly26DeviceRegistrationResponseV14broadcastTopicSSSgvg",
+                "mangledName": "$s7Linkzly26DeviceRegistrationResponseV14broadcastTopicSSSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -10223,77 +10284,91 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 933,
       "length": 28,
       "value": "\"linkzly_notification_token\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 992,
       "length": 19,
       "value": "\"linkzly_device_id\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 1049,
       "length": 32,
       "value": "\"linkzly_notif_registered_token\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 1118,
       "length": 31,
       "value": "\"linkzly_notif_registered_user\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 940,
+      "offset": 1189,
       "length": 34,
       "value": "\"linkzly_notif_registered_version\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1009,
+      "offset": 1258,
       "length": 29,
       "value": "\"linkzly_notif_registered_at\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1073,
+      "offset": 1322,
       "length": 30,
       "value": "\"linkzly_notif_registered_ack\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1389,
+      "length": 31,
+      "value": "\"linkzly_notif_broadcast_topic\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1474,
+      "length": 19,
+      "value": "\"linkzly_broadcast\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1270,
+      "offset": 1654,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1274,
+      "offset": 1658,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1279,
+      "offset": 1663,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1284,
+      "offset": 1668,
       "length": 2,
       "value": "60"
     },
@@ -10433,28 +10508,28 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 36334,
+      "offset": 34878,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 36429,
+      "offset": 34973,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 36523,
+      "offset": 35067,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 37874,
+      "offset": 36418,
       "length": 3,
       "value": "[]"
     }
