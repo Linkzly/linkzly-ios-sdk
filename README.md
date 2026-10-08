@@ -1,10 +1,14 @@
 # LinkzlySDK for iOS
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.7+-orange.svg)](https://swift.org)
-[![Platform](https://img.shields.io/badge/Platform-iOS%2012.0%2B%20%7C%20macOS%2010.14%2B-lightgrey.svg)](https://developer.apple.com)
+[![Platform](https://img.shields.io/badge/Platform-iOS%2012.0%2B-lightgrey.svg)](https://developer.apple.com)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
 
 LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Track app installs, opens, and custom events while seamlessly handling Universal Links for deferred deep linking.
+
+Full documentation: https://docs.linkzly.com/docs/sdk-ios
+
+Related guides: [Tracking events](https://docs.linkzly.com/docs/sdk-tracking-events), [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases), [Integrations setup](https://docs.linkzly.com/docs/sdk-integrations-setup).
 
 ## Features
 
@@ -14,26 +18,23 @@ LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Trac
 - 👤 **User Identification** - Associate events with specific users
 - 🔐 **Privacy-First** - Opt-in/opt-out tracking controls
 - 📱 **Advertising Identifiers** - IDFA, IDFV, and ATT framework support
-- 🤝 **Affiliate Attribution** - Track affiliate clicks with S2S postback support
-- 🔔 **Push Notifications** - Device token registration for any provider, plus FCM broadcast topics
+- 🤝 **Affiliate Attribution** - Capture and store the affiliate click ID for your server to use in server-to-server (S2S) conversion tracking
+- 🔔 **Push Notifications** - Registration of the Firebase Cloud Messaging (FCM) registration token, plus FCM broadcast topics
 - 🎮 **Gaming Intelligence** - Batch event tracking for games with session management
 - ⚡ **Lightweight** - Zero third-party dependencies
 - 🎨 **SwiftUI & UIKit** - Works with both frameworks
-- 🔧 **Objective-C Compatible** - Full Objective-C bridging support
+- 🔧 **Objective-C Compatible** - Objective-C entry points for the core calls
 
 ## Requirements
 
-| Component | Minimum Version | Recommended |
-|-----------|----------------|-------------|
-| iOS | 12.0+ | 15.0+ |
-| macOS | 10.14+ | 12.0+ |
-| Xcode | 14.0+ | 15.0+ |
-| Swift | 5.7+ | 5.9+ |
-| CocoaPods | 1.10+ | Latest |
+| Component | Value |
+|-----------|-------|
+| Minimum deployment target declared by the SDK | iOS 12.0 |
+| Swift tools version declared by the package | 5.7 |
 
 **Language Support:**
 - Swift (primary, all examples below)
-- Objective-C (fully compatible)
+- Objective-C (entry points for the core calls; `trackInstall`, `trackOpen`, `trackPurchase`, `trackRefund` and `flushEvents` have Swift-only signatures, so Objective-C uses `trackInstallObjC` and `trackOpenObjC` for install and open)
 
 ## Prerequisites
 
@@ -57,43 +58,45 @@ Your SDK key (`slk_` prefix) authenticates your app with Linkzly's servers. You 
 
 ## Installation
 
+**SDK version:** 1.0.7
+
 ### Swift Package Manager
 
 Add LinkzlySDK to your project using Xcode:
 
-1. In Xcode, go to **File → Add Package Dependencies**
-2. Enter the repository URL: `https://github.com/AdsGames24/linkzly-ios-package.git`
+1. In Xcode, go to **File → Add Package Dependencies…**
+2. Enter the repository URL: `https://github.com/Linkzly/linkzly-ios-sdk.git`
 3. Select the version or branch you want to use
-4. Click **Add Package**
+4. Add the **Linkzly** product to your app target
 
 Or add it to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AdsGames24/linkzly-ios-package.git", from: "1.0.0")
+    .package(url: "https://github.com/Linkzly/linkzly-ios-sdk.git", from: "1.0.7")
+],
+targets: [
+    .target(name: "YourApp", dependencies: [.product(name: "Linkzly", package: "linkzly-ios-sdk")])
 ]
 ```
 
-Then add the dependency to your target:
+### CocoaPods
 
-```swift
-.target(
-    name: "YourApp",
-    dependencies: ["Linkzly"]
-)
-```
-
-### CocoaPods (Coming Soon)
+`LinkzlySDK` is not published to CocoaPods Trunk, so the pod needs its Git source and tag:
 
 ```ruby
-pod 'LinkzlySDK'
+pod 'LinkzlySDK', :git => 'https://github.com/Linkzly/linkzly-ios-sdk.git', :tag => '1.0.7'
 ```
 
-### Carthage (Coming Soon)
+Then import the module. The module is named `Linkzly`; the class you call is `LinkzlySDK`.
 
+```swift
+import Linkzly
 ```
-github "AdsGames24/linkzly-ios-package"
-```
+
+### Carthage
+
+Carthage is not supported.
 
 ## Quick Start
 
@@ -110,7 +113,7 @@ struct YourApp: App {
     init() {
         // Configure SDK on app launch
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
             environment: .production
         )
 
@@ -173,7 +176,7 @@ import Linkzly
 struct YourApp: App {
     init() {
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
             environment: .production
         )
     }
@@ -205,7 +208,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console"  // Get this from Dashboard > Apps > Manage App,
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
             environment: .production
         )
 
@@ -370,13 +373,11 @@ struct ContentView: View {
 
 ### Track Events
 
+**Register the name first.** A custom event is kept only if its name is registered for the app in the console. An unregistered name is dropped, and on the default batched path the call and the flush still report success. See [Register each name in the console](https://docs.linkzly.com/docs/sdk-tracking-events#register-each-name-in-the-console).
+
 ```swift
 // Track custom events
-LinkzlySDK.trackEvent("purchase_completed", parameters: [
-    "product_id": "12345",
-    "amount": 29.99,
-    "currency": "USD"
-])
+LinkzlySDK.trackEvent("signup_completed", parameters: ["method": "email"])
 
 // Track screen views
 LinkzlySDK.trackEvent("screen_view", parameters: [
@@ -386,13 +387,15 @@ LinkzlySDK.trackEvent("screen_view", parameters: [
 
 ### Track Purchases
 
+`revenue`, `currency` and `transactionId` are required. `transactionId` is the dedup key: a repeat of the same id is discarded. See [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases).
+
 ```swift
-// Track purchase events with completion handler
 LinkzlySDK.trackPurchase(parameters: [
-    "product_id": "12345",
-    "amount": 29.99,
+    "revenue": 29.99,
     "currency": "USD",
-    "transaction_id": "txn_abc123"
+    "transactionId": "order-12345",
+    "productId": "premium_monthly",
+    "revenueType": "subscription" // "iap" | "subscription" | "other"
 ]) { result in
     switch result {
     case .success(let response):
@@ -401,6 +404,13 @@ LinkzlySDK.trackPurchase(parameters: [
         print("Error: \(error)")
     }
 }
+
+// Refund: reuse the ORIGINAL transactionId so it nets out
+LinkzlySDK.trackRefund(parameters: [
+    "revenue": 29.99,
+    "currency": "USD",
+    "transactionId": "order-12345"
+])
 ```
 
 ### User Identification
@@ -425,20 +435,15 @@ let visitorId = LinkzlySDK.getVisitorID()
 LinkzlySDK.resetVisitorID()
 ```
 
-### Session Management
+### Sessions
 
-```swift
-// Start a new session
-LinkzlySDK.startSession()
-
-// End current session
-LinkzlySDK.endSession()
-```
+Sessions are automatic. The SDK records an open when the app becomes active more than 30 seconds after the last session and sends a session-end event when the app resigns active. There is nothing to start or end yourself. (Gaming sessions have their own `startGamingSession` and `endGamingSession`, below.)
 
 ### Privacy Controls
 
 ```swift
-// Disable tracking
+// Stop custom events, purchases and refunds
+// (install, open and session-end events are not affected; trackEventBatch is not stopped)
 LinkzlySDK.setTrackingEnabled(false)
 
 // Check tracking status
@@ -454,7 +459,9 @@ let isAdTrackingEnabled = LinkzlySDK.isAdvertisingTrackingEnabled()
 ### Track Install/Open
 
 ```swift
-// Track app install (automatically called on first launch)
+// The SDK sends the install itself on the first launch of a new install.
+// Calling trackInstall yourself on a new install sends a second install event;
+// register LinkzlySDK.onDeepLink to get the deferred DeepLinkData without it.
 LinkzlySDK.trackInstall { result in
     switch result {
     case .success(let deepLinkData):
@@ -466,10 +473,24 @@ LinkzlySDK.trackInstall { result in
     }
 }
 
-// Track app open
+// Track app open. The SDK already sends opens itself (when the app becomes active more than
+// 30 seconds after the last session); each explicit call sends one more open event.
+// Call it only when you need the DeepLinkData it returns.
 LinkzlySDK.trackOpen { result in
     // Handle result
 }
+```
+
+**Objective-C:** `trackInstall` and `trackOpen` return a Swift `Result`. From Objective-C use `trackInstallObjC` and `trackOpenObjC`, whose completion receives `DeepLinkData` and `NSError`:
+
+```objc
+[LinkzlySDK trackInstallObjCWithCompletion:^(DeepLinkData *data, NSError *error) {
+    // data is nil when there is no deep link data or the call failed
+}];
+
+[LinkzlySDK trackOpenObjCWithCompletion:^(DeepLinkData *data, NSError *error) {
+    // same shape as trackInstallObjC
+}];
 ```
 
 ### Event Queue Management
@@ -532,6 +553,14 @@ LinkzlySDK.requestTrackingPermission { result in
 }
 ```
 
+**From Objective-C**, use `requestTrackingPermissionObjC`, which returns the status as a string (`"authorized"`, `"denied"`, `"restricted"`, `"notDetermined"` or `"unknown"`):
+
+```objc
+[LinkzlySDK requestTrackingPermissionObjCWithCompletion:^(NSString *status, NSError *error) {
+    // status is nil when error is set
+}];
+```
+
 **Get Current IDFA/ATT Status:**
 
 ```swift
@@ -580,26 +609,9 @@ Advertising identifiers are collected on **every event** (install, open, custom 
 - IDFV: Always included (no permission required)
 - ATT status: Always included for iOS 14+
 
-**Example Event Payload:**
-
-```json
-{
-  "type": "sdk_event",
-  "eventType": "purchase_completed",
-  "platform": "ios",
-  "idfa": "12345678-90AB-CDEF-1234-567890ABCDEF",
-  "idfv": "87654321-FEDC-BA09-8765-4321FEDCBA09",
-  "attStatus": "authorized",
-  "deviceFingerprint": {
-    "deviceModel": "iPhone14,2",
-    "systemVersion": "17.2"
-  }
-}
-```
-
 ### SKAdNetwork Support (iOS 14+)
 
-The SDK supports SKAdNetwork for privacy-preserving attribution:
+The SDK registers and updates SKAdNetwork conversion values on the device. Your app decides the value; the SDK passes it to StoreKit:
 
 ```swift
 // Update conversion value (iOS 14.0+)
@@ -659,11 +671,13 @@ if let clickId = LinkzlySDK.getAffiliateClickId() {
     sendToServer(clickId: clickId, orderId: orderId, amount: amount)
 }
 
-// Get full attribution data
-if let attribution = LinkzlySDK.getAffiliateAttribution() {
-    print("Click ID: \(attribution.clickId)")
-    print("Network: \(attribution.network ?? "unknown")")
-    print("Campaign: \(attribution.campaign ?? "unknown")")
+// Get full attribution data (always returns a value; check hasAttribution)
+let attribution = LinkzlySDK.getAffiliateAttribution()
+if attribution.hasAttribution {
+    print("Click ID: \(attribution.clickId ?? "none")")
+    print("Program: \(attribution.programId ?? "none")")
+    print("Affiliate: \(attribution.affiliateId ?? "none")")
+    print("Source: \(attribution.source)")  // .deepLink, .stored or .none
 }
 
 // Check if attribution exists
@@ -681,7 +695,7 @@ LinkzlySDK.clearAffiliateAttribution()
 |--------|-------------|-------------|
 | `captureAffiliateAttribution(from: URL)` | `Bool` | Captures affiliate attribution from a deep link URL |
 | `getAffiliateClickId()` | `String?` | Returns the stored affiliate click ID |
-| `getAffiliateAttribution()` | `AffiliateAttribution?` | Returns full attribution data |
+| `getAffiliateAttribution()` | `AffiliateAttribution` | Returns full attribution data (`clickId`, `programId`, `affiliateId`, `timestamp`, `source`) |
 | `hasAffiliateAttribution()` | `Bool` | Checks if attribution data exists |
 | `clearAffiliateAttribution()` | `Void` | Clears stored attribution data |
 
@@ -696,25 +710,36 @@ The SDK exposes **two independent push features** — most apps that target indi
 
 | Feature | Methods | What it does | When to use |
 |---|---|---|---|
-| **Device token registration** | `setNotificationToken` / `getNotificationToken` / `hasNotificationToken` / `clearNotificationToken` | Registers this device's **APNs/FCM token** in Linkzly's device registry so campaigns can target the specific device/user. Works with **any** push provider. | You want Linkzly to send (or target) notifications to individual devices/users. |
+| **Device token registration** | `setNotificationToken` / `getNotificationToken` / `hasNotificationToken` / `clearNotificationToken` | Registers this device's **Firebase Cloud Messaging (FCM) registration token** in Linkzly's device registry so campaigns can target the specific device/user. On iOS pass the token Firebase Messaging gives you, **never** the APNs device token. | You want Linkzly to send (or target) notifications to individual devices/users. |
 | **Broadcast topic subscription** | `initializePush` / `disablePush` | Re-runs or reverses this device's subscription to its **per-(Smart App, platform) FCM topic** for "send to All" campaigns. The subscribe already happens **automatically** inside `setNotificationToken` — these are recovery / opt-out controls, not the mechanism. FCM-only, via runtime reflection. | Rarely: to opt back in after `disablePush()`, or to retry a subscribe Firebase was not ready for. |
 
 The two are not mutually exclusive, but they solve different problems. Start with **device token registration** below.
 
 #### Registering a device push token
 
-`setNotificationToken` records the device's push token in Linkzly's device registry (`/api/sdk/devices/register`). Call it whenever your app obtains or refreshes its APNs (or FCM) token — the SDK throttles network calls (it only re-registers when the token, user, or app version changes, or after 7 days), so it is safe to call on every launch.
+`setNotificationToken` records the device's push token in Linkzly's device registry (`/api/sdk/devices/register`). On iOS the token must be the **Firebase Cloud Messaging registration token** that Firebase Messaging gives your app. Do **not** pass the APNs device token from `didRegisterForRemoteNotificationsWithDeviceToken`: devices registered through the SDK are reached through Firebase Cloud Messaging, so an APNs device token can never receive a push. Your app therefore requires Firebase Messaging, and Firebase needs your APNs key or certificate (set up in the Firebase console). Call `setNotificationToken` whenever Firebase gives you a token — the SDK throttles network calls (it only re-registers when the token, user, or app version changes, or after 7 days), so it is safe to call on every launch.
 
 ```swift
-// AppDelegate — after APNs registration succeeds
-func application(_ application: UIApplication,
-                 didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    let tokenString = deviceToken.map { String(format: "%02x", $0) }.joined()
-    LinkzlySDK.setNotificationToken(tokenString)
+import FirebaseMessaging
+
+// Firebase calls this with the FCM registration token at launch and whenever it changes.
+// (Set `Messaging.messaging().delegate = self` on your MessagingDelegate.)
+func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+    guard let fcmToken else { return }
+    LinkzlySDK.setNotificationToken(fcmToken)
+}
+
+// Or read the current token on demand:
+func registerCurrentFcmToken() async {
+    if let fcmToken = try? await Messaging.messaging().token() {
+        LinkzlySDK.setNotificationToken(fcmToken)
+    }
 }
 ```
 
-If you use a push provider that vends a string token (FCM, OneSignal, etc.), pass that string directly to `setNotificationToken`.
+The Swift samples in this section were compiled against Firebase iOS SDK 13.0.1 (`FirebaseMessaging`).
+
+On iOS, `setNotificationToken` is ignored until `configure` has run (it logs a warning and stores nothing). If your app delays `configure`, for example until the user has consented, call `setNotificationToken` again after `configure`, for example with the current token from Firebase Messaging; a call made after `configure` registers normally.
 
 **Binding to a user:** when you call `LinkzlySDK.setUserID(...)`, the SDK automatically re-registers the stored token against the new user id, so campaigns can target that user.
 
@@ -737,7 +762,7 @@ let has   = LinkzlySDK.hasNotificationToken()   // Bool
 
 | Method | Returns | Description |
 |--------|---------|-------------|
-| `setNotificationToken(_ token: String)` | `Void` | Registers the device's APNs/FCM token in Linkzly's device registry (throttled) |
+| `setNotificationToken(_ token: String)` | `Void` | Registers the device's FCM registration token in Linkzly's device registry (throttled). On iOS this is the Firebase Messaging token, not the APNs device token |
 | `getNotificationToken()` | `String?` | Returns the currently stored push token, if any |
 | `hasNotificationToken()` | `Bool` | Checks whether a push token is stored |
 | `clearNotificationToken()` | `Void` | Clears the token locally and revokes it server-side |
@@ -755,40 +780,42 @@ Use this only if you want "send to All" broadcast campaigns and your app uses Fi
 
 > **Note:** `initializePush()` and `disablePush()` are **Firebase Cloud Messaging only**. They subscribe/unsubscribe the device to its server-assigned FCM broadcast topic (`linkzly_broadcast_<smartAppId>_ios`) using runtime reflection. **`initializePush()` does nothing until token registration has succeeded** — it subscribes to the topic that registration stored, and returns `false` when there is none.
 >
-> If your app uses **OneSignal**, **Braze**, or another push provider, you do **not** need these methods for that provider's own delivery. Use `setNotificationToken` if you still want Linkzly to target the device.
+> If your app also uses another push provider for its own delivery, you do **not** need these methods for that. Linkzly delivers through Firebase Cloud Messaging, so register the FCM token with `setNotificationToken` to have Linkzly target the device.
 
 **Setup (Swift):**
 
 ```swift
-import Linkzly
+import FirebaseCore
 import FirebaseMessaging
+import UIKit
+import Linkzly
 
-func application(_ application: UIApplication,
-                didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        // 1. Firebase first — it must be live before the token is registered,
+        //    or the topic subscribe is deferred to the next launch.
+        FirebaseApp.configure()
 
-    // 1. Firebase first — it must be live before the token is registered,
-    //    or the topic subscribe is deferred to the next launch.
-    FirebaseApp.configure()
+        // 2. Configure Linkzly
+        LinkzlySDK.configure(sdkKey: "slk_your_key_from_console", environment: .production)
 
-    // 2. Configure Linkzly
-    LinkzlySDK.configure(sdkKey: "slk_your_key_from_console", environment: .production)
-
-    // 3. Ask for permission and register with APNs
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, _ in
-        guard granted else { return }
-        DispatchQueue.main.async { application.registerForRemoteNotifications() }
+        // 3. Let Firebase deliver its registration token to this delegate, then register for remote notifications
+        Messaging.messaging().delegate = self
+        application.registerForRemoteNotifications()
+        return true
     }
 
-    return true
-}
-
-// 4. This is what enables broadcasts: registration stores the topic and subscribes to it.
-func application(_ application: UIApplication,
-                didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    let tokenString = deviceToken.map { String(format: "%02x", $0) }.joined()
-    LinkzlySDK.setNotificationToken(tokenString)
+    // 4. This is what enables broadcasts: registration stores the topic and subscribes to it.
+    //    Firebase calls this with the FCM registration token at launch and whenever it changes.
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        guard let fcmToken else { return }
+        LinkzlySDK.setNotificationToken(fcmToken)
+    }
 }
 ```
+
+Asking the user for notification permission (`UNUserNotificationCenter.requestAuthorization`) is a separate step that you do in your own app. Giving Firebase your APNs key or certificate is Firebase's own setup, done in the Firebase console.
 
 > Calling `initializePush()` in `didFinishLaunchingWithOptions` returns `false` on a first launch — no registration has completed yet, so there is no topic to subscribe to.
 
@@ -802,31 +829,29 @@ let subscribed = LinkzlySDK.initializePush()
 
 It returns `false` when the SDK is not configured, no topic is stored yet, or Firebase Messaging is unavailable.
 
-**Setup (Objective-C):**
+**Setup (Objective-C):** (derived from the compiled Swift sample and Firebase's documented Objective-C API; not compiled)
 
 ```objc
-#import <Linkzly/Linkzly.h>
 @import FirebaseMessaging;
+
+@interface AppDelegate () <FIRMessagingDelegate>
+@end
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [FIRApp configure];
-    [LinkzlySDK configureWithSdkKey:@"slk_your_key_from_console" environment:LinkzlyEnvironmentProduction];
+    [LinkzlySDK configureWithSdkKey:@"slk_your_key_from_console"];  // production
+    [FIRMessaging messaging].delegate = self;
     [application registerForRemoteNotifications];
 
     return YES;
 }
 
-- (void)application:(UIApplication *)application
-    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-
-    NSMutableString *token = [NSMutableString string];
-    const unsigned char *bytes = deviceToken.bytes;
-    for (NSUInteger i = 0; i < deviceToken.length; i++) {
-        [token appendFormat:@"%02x", bytes[i]];
-    }
-    [LinkzlySDK setNotificationToken:token];
+// Firebase calls this with the FCM registration token at launch and whenever it changes.
+- (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
+    if (fcmToken.length == 0) { return; }
+    [LinkzlySDK setNotificationToken:fcmToken];
 }
 ```
 
@@ -850,8 +875,7 @@ LinkzlySDK.disablePush()
 4. Subscription uses runtime reflection — Firebase is not a compile dependency of the SDK
 
 **Compatibility:**
-- Works alongside other push notification providers (OneSignal, Braze, Airship, etc.)
-- Does not interfere with your existing push notification setup
+- If your app also uses another push provider for its own delivery, you do **not** need these calls for it. Devices registered through the SDK are reached through Firebase Cloud Messaging.
 - Only subscribes to Linkzly-specific FCM topics
 
 **Troubleshooting:**
@@ -859,9 +883,9 @@ LinkzlySDK.disablePush()
 | Issue | Solution |
 |-------|----------|
 | `initializePush()` returns `false` | Expected before the first successful `setNotificationToken` — there is no topic yet. Otherwise: SDK not configured, or Firebase Messaging not linked into the app |
-| No push notifications received | Verify FCM setup and APNs certificate, and confirm `setNotificationToken` registration succeeded — without it the device holds no topic |
+| No push notifications received | Verify that you pass the **FCM registration token** (not the APNs device token) to `setNotificationToken`, that your APNs key or certificate is uploaded in the Firebase console, and that registration succeeded — without it the device holds no topic |
 | Broadcasts resume after `disablePush()` | Expected: `disablePush()` lasts the session only and the next launch re-subscribes. Use `clearNotificationToken()` for a durable opt-out |
-| Conflict with other push providers | Linkzly uses topic-based messaging, which is independent of other providers |
+| Another push provider is also in the app | You do not need these calls for that provider's own delivery. Devices registered through the SDK are reached through Firebase Cloud Messaging |
 
 ### Gaming Intelligence
 
@@ -938,6 +962,8 @@ LinkzlySDK.trackGamingEventImmediate("purchase", data: [
     "currency": "USD"
 ])
 ```
+
+A gaming `purchase` event is game telemetry and is not recorded as revenue; report revenue with `trackPurchase`.
 
 **Attribution:**
 
@@ -1036,9 +1062,29 @@ The SDK posts NSNotification events for flexibility:
 | Notification | UserInfo Keys | Description |
 |-------------|---------------|-------------|
 | `.linkzlyUniversalLinkReceived` | `url`, `attributionData` | Posted when a Universal Link is received |
-| `.linkzlyDeepLinkDataReceived` | `deepLinkData` | Posted when attribution data is available |
-| `.linkzlyAffiliateAttributionCaptured` | `affiliateAttribution` | Posted when affiliate attribution is captured from a deep link |
-| `.linkzlyServerConfigReceived` | Server config data | Posted when server configuration is received |
+| `.linkzlyDeepLinkDataReceived` | `deepLinkData`, and `url` when present | Posted when attribution data is available |
+| `.linkzlyAffiliateAttributionCaptured` | `clickId` | Posted when affiliate attribution is captured from a deep link |
+| `.linkzlyServerConfigReceived` | `headers` | Posted when server configuration is received |
+
+## App Delegate Helpers
+
+Two helpers forward `UIApplicationDelegate` callbacks to the SDK and return whether the link was handled:
+
+```swift
+func application(_ app: UIApplication,
+                 open url: URL,
+                 options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+    return LinkzlySDK.application(app, open: url, options: options)
+}
+
+func application(_ application: UIApplication,
+                 continue userActivity: NSUserActivity,
+                 restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    return LinkzlySDK.application(application, continue: userActivity, restorationHandler: restorationHandler)
+}
+```
+
+The `continue` helper handles only web-browsing activities (Universal Links) and returns `false` for anything else.
 
 ## DeepLinkData API
 
@@ -1073,6 +1119,9 @@ Run your app and check the console for:
 ```
 
 **2. Verify Event Tracking:**
+
+Register `test_event` for the app first (see [Register each name in the console](https://docs.linkzly.com/docs/sdk-tracking-events#register-each-name-in-the-console)). Linkzly drops an event whose name is not registered.
+
 ```swift
 LinkzlySDK.trackEvent("test_event", parameters: ["test": true])
 ```
@@ -1081,6 +1130,8 @@ Console should show:
 📤 Tracking event: test_event
 📥 Event tracked successfully
 ```
+
+These lines only show that the SDK sent the event. An unregistered name is dropped by Linkzly.
 
 **3. Test Deep Links:**
 ```bash
@@ -1105,7 +1156,7 @@ Console should show:
 - [ ] SDK imports without errors (`import Linkzly`)
 - [ ] SDK initializes on app launch (check console)
 - [ ] First install event tracked automatically
-- [ ] Custom events tracked successfully
+- [ ] Custom events tracked successfully, once their names are registered for the app
 - [ ] Deep links open your app
 - [ ] Deep link data received via notifications or handlers
 - [ ] Associated Domains capability configured
@@ -1181,46 +1232,26 @@ The SDK collects the following information:
 All data is sent over HTTPS. You can disable tracking at any time:
 
 ```swift
-// Disable all tracking
+// Stop custom events, purchases and refunds (not install, open or session-end events)
 LinkzlySDK.setTrackingEnabled(false)
 
 // Disable advertising identifier collection only
 LinkzlySDK.setAdvertisingTrackingEnabled(false)
 ```
 
-**Privacy Compliance:**
-- GDPR compliant - respects user consent preferences
-- CCPA compliant - opt-out controls available
-- App Store compliant - includes PrivacyInfo.xcprivacy manifest
-- ATT compliant - respects iOS tracking authorization
+**Privacy controls:**
+- `setTrackingEnabled` and `setAdvertisingTrackingEnabled` let your app honor a user's choice. `setTrackingEnabled(false)` stops custom events, purchases and refunds; it does not stop the install, open and session-end events the SDK sends itself, and it does not stop `trackEventBatch`, so skip that call in your own code while tracking is off
+- The SDK sends nothing before `configure`: an app that must send nothing before the user consents delays `configure` until the user has consented, and uses `setTrackingEnabled(false)` afterwards to stop events, purchases and refunds
+- The framework includes a `PrivacyInfo.xcprivacy` manifest
+- IDFA is only collected when ATT status is authorized
 
-## Example App
-
-Explore a complete working example demonstrating all SDK features:
-
-**Repository:** [https://github.com/MarenTech/linkzly-ios-sdk-example](https://github.com/MarenTech/linkzly-ios-sdk-example.git)
-
-```bash
-git clone https://github.com/MarenTech/linkzly-ios-sdk-example.git
-cd linkzly-ios-sdk-example
-open LinkzlyApp.xcodeproj
-```
-
-The example app showcases:
-- SDK configuration and initialization
-- Universal Links handling with closure handlers
-- Deep link navigation patterns
-- Event tracking (custom events, purchases)
-- User and visitor identification
-- Session management
-- Privacy controls and ATT permission requests
-- Advertising identifier collection
+Whether your app meets GDPR, CCPA or App Store requirements depends on how you use these controls.
 
 ## Changelog
 
 ### v1.2
-- Added Affiliate Attribution Tracking (S2S postback support)
-- Added Push Notification Support — per-device token registration (`setNotificationToken`, any provider) and FCM broadcast topic subscription
+- Added Affiliate Attribution Tracking (captures and stores the affiliate click ID for your server to use in server-to-server conversion tracking)
+- Added Push Notification Support — per-device token registration (`setNotificationToken`, which takes the FCM registration token) and FCM broadcast topic subscription
 - Added Gaming Intelligence Module (batch event tracking)
 
 ### v1.1
@@ -1241,8 +1272,8 @@ The example app showcases:
 
 - [ ] Created app in Linkzly Console (Dashboard > Apps)
 - [ ] Copied SDK key from console
-- [ ] Added LinkzlySDK package via SPM
-- [ ] Called `LinkzlySDK.configure(sdkKey:config:)` in AppDelegate
+- [ ] Added the `Linkzly` package via SPM (or the Git-pinned pod)
+- [ ] Called `LinkzlySDK.configure(sdkKey:environment:)` at launch
 - [ ] Added Associated Domain (`applinks:{prefix}.linkz.ly`) in Xcode
 - [ ] Implemented Universal Link handling in AppDelegate
 - [ ] Registered device push token via `setNotificationToken` (and cleared on logout)
@@ -1255,5 +1286,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 - 📧 Email: support@linkzly.com
-- 📚 Documentation: https://app.linkzly.com
-- 🐛 Issues: https://github.com/MarenTech/linkzly-ios-sdk/issues
+- 📚 Documentation: https://docs.linkzly.com/docs/sdk-ios
+- 🐛 Issues: https://github.com/Linkzly/linkzly-ios-sdk/issues
