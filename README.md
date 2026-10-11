@@ -10,6 +10,10 @@ Full documentation: https://docs.linkzly.com/docs/sdk-ios
 
 Related guides: [Tracking events](https://docs.linkzly.com/docs/sdk-tracking-events), [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases), [Integrations setup](https://docs.linkzly.com/docs/sdk-integrations-setup).
 
+## Using an AI coding agent
+
+If you use an AI coding agent (Claude Code, Codex, Cursor, GitHub Copilot, Antigravity), give it the Linkzly skill and ask it to add the SDK to your app: `npx skills add Linkzly/skills`. The skill carries these instructions, cut to your platform, and rules for the SDK behaviours that are easy to get wrong. It asks you for your SDK key and never makes one up. See [Set up with an AI agent](https://docs.linkzly.com/docs/sdk-ai-agents).
+
 ## Features
 
 - 🔗 **Universal Links Support** - Handle deep links automatically
@@ -43,7 +47,7 @@ Before integrating the SDK, set up your app in the Linkzly Console:
 1. Go to **Dashboard > Apps** and click "Register App"
 2. Enter your iOS **Bundle ID** and **Team ID**
 3. Choose a verification method (Hosted recommended for quick start)
-4. Copy your **SDK Key** from the post-creation wizard or from Manage App > Overview > SDK Configuration
+4. Copy your **SDK Key** from the post-creation wizard or from Manage app > Overview > SDK Configuration
 
 Your SDK key starts with `slk_` and uniquely identifies your app.
 
@@ -52,7 +56,7 @@ Your SDK key starts with `slk_` and uniquely identifies your app.
 Your SDK key (`slk_` prefix) authenticates your app with Linkzly's servers. You can find it in:
 
 - **Post-creation wizard**: Displayed prominently right after creating your app
-- **Dashboard > Apps > Manage App > Overview > SDK Configuration**: Click the eye icon to reveal, or copy directly
+- **Dashboard > Apps > Manage app > Overview > SDK Configuration**: Click the eye icon to reveal, or copy directly
 
 > **Note**: Each app has a unique SDK key. Do not share keys between different apps.
 
@@ -113,7 +117,7 @@ struct YourApp: App {
     init() {
         // Configure SDK on app launch
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage app
             environment: .production
         )
 
@@ -176,7 +180,7 @@ import Linkzly
 struct YourApp: App {
     init() {
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage app
             environment: .production
         )
     }
@@ -208,7 +212,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         LinkzlySDK.configure(
-            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage App
+            sdkKey: "slk_your_key_from_console",  // Get this from Dashboard > Apps > Manage app
             environment: .production
         )
 
@@ -387,7 +391,7 @@ LinkzlySDK.trackEvent("screen_view", parameters: [
 
 ### Track Purchases
 
-`revenue`, `currency` and `transactionId` are required. `transactionId` is the dedup key: a repeat of the same id is discarded. See [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases).
+`revenue`, `currency` and `transactionId` are required. `transactionId` is the dedup key: a repeat of the same id is discarded. Purchases are recorded only when Revenue & LTV is enabled for your organisation. See [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases).
 
 ```swift
 LinkzlySDK.trackPurchase(parameters: [
@@ -1277,7 +1281,7 @@ Whether your app meets GDPR, CCPA or App Store requirements depends on how you u
 - [ ] Added Associated Domain (`applinks:{prefix}.linkz.ly`) in Xcode
 - [ ] Implemented Universal Link handling in AppDelegate
 - [ ] Registered device push token via `setNotificationToken` (and cleared on logout)
-- [ ] Verified integration in Linkzly Console (Manage App > Integration tab)
+- [ ] Verified integration in Linkzly Console (Manage app > Verification tab, the SDK connection card)
 
 ## License
 
