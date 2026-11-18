@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Linkzly
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Linkzly
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
+import AdAttributionKit
 import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
@@ -9,6 +10,7 @@ import CoreTelephony
 import CryptoKit
 import Foundation
 import Network
+import ObjectiveC
 import Security
 import StoreKit
 import Swift
@@ -18,7 +20,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-@objc public enum LinkzlyGamingFlushReason : Swift.Int {
+@objc public enum LinkzlyGamingFlushReason : Swift::Int {
   case batchFull = 0
   case timeInterval = 1
   case sessionEnd = 2
@@ -27,259 +29,284 @@ import os
   case queueOverflow = 5
   case errorRecovery = 6
   case startupRecovery = 7
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc final public class LinkzlyGamingOptions : ObjectiveC.NSObject {
-  @objc final public var baseURL: Swift.String
-  @objc final public var endpointPath: Swift.String
-  @objc final public var sdkVersion: Swift.String
-  @objc final public var gameVersion: Swift.String
-  @objc final public var includeTraits: Swift.Bool
-  @objc final public var debug: Swift.Bool
-  @objc final public var maxBatchSize: Swift.Int
-  @objc final public var maxBatchBytes: Swift.Int
-  @objc final public var flushIntervalMs: Swift.Int
-  @objc final public var maxRetries: Swift.Int
-  @objc final public var retryDelayMs: Swift.Int
-  @objc final public var maxQueueSize: Swift.Int
-  @objc final public var sessionTimeoutMs: Swift.Int
-  @objc final public var autoSessionTracking: Swift.Bool
-  @objc final public var signingSecret: Swift.String?
+@_inheritsConvenienceInitializers @objc final public class LinkzlyGamingOptions : ObjectiveC::NSObject {
+  @objc final public var baseURL: Swift::String
+  @objc final public var endpointPath: Swift::String
+  @objc final public var sdkVersion: Swift::String
+  @objc final public var gameVersion: Swift::String
+  @objc final public var includeTraits: Swift::Bool
+  @objc final public var debug: Swift::Bool
+  @objc final public var maxBatchSize: Swift::Int
+  @objc final public var maxBatchBytes: Swift::Int
+  @objc final public var flushIntervalMs: Swift::Int
+  @objc final public var maxRetries: Swift::Int
+  @objc final public var retryDelayMs: Swift::Int
+  @objc final public var maxQueueSize: Swift::Int
+  @objc final public var sessionTimeoutMs: Swift::Int
+  @objc final public var autoSessionTracking: Swift::Bool
+  @objc final public var signingSecret: Swift::String?
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class LinkzlyGamingStatus : ObjectiveC.NSObject {
-  @objc final public let pendingEventCount: Swift.Int
-  @objc final public let hasInflightBatch: Swift.Bool
+@_hasMissingDesignatedInitializers @objc final public class LinkzlyGamingStatus : ObjectiveC::NSObject {
+  @objc final public let pendingEventCount: Swift::Int
+  @objc final public let hasInflightBatch: Swift::Bool
   @objc deinit
 }
-extension Linkzly.LinkzlySDK {
-  @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, environment: Linkzly.Environment, options: Linkzly.LinkzlyGamingOptions?)
-  @objc public static func configureGamingTracking(apiKey: Swift.String, organizationId: Swift.String, gameId: Swift.String, options: Linkzly.LinkzlyGamingOptions?)
-  @objc public static func identifyGamingPlayer(_ playerId: Swift.String, traits: [Swift.String : Any]? = nil)
+extension Linkzly::LinkzlySDK {
+  @objc public static func configureGamingTracking(apiKey: Swift::String, organizationId: Swift::String, gameId: Swift::String, environment: Linkzly::Environment, options: Linkzly::LinkzlyGamingOptions?)
+  @objc public static func configureGamingTracking(apiKey: Swift::String, organizationId: Swift::String, gameId: Swift::String, options: Linkzly::LinkzlyGamingOptions?)
+  @objc public static func identifyGamingPlayer(_ playerId: Swift::String, traits: [Swift::String : Any]? = nil)
   @objc public static func resetGamingTracking()
   @objc public static func startGamingSession()
   @objc public static func endGamingSession()
-  @objc public static func trackGamingEvent(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
-  @objc public static func trackGamingEventImmediate(_ eventType: Swift.String, data: [Swift.String : Any]? = nil)
-  @objc public static func flushGamingEvents(_ reason: Linkzly.LinkzlyGamingFlushReason = .manualFlush, completion: ((Swift.Bool, (any Swift.Error)?) -> Swift.Void)? = nil)
-  @objc public static func setGamingAttribution(clickId: Swift.String?, deferredDeepLink: Swift.String?, metadata: [Swift.String : Any]? = nil)
+  @objc public static func trackGamingEvent(_ eventType: Swift::String, data: [Swift::String : Any]? = nil)
+  @objc public static func trackGamingEventImmediate(_ eventType: Swift::String, data: [Swift::String : Any]? = nil)
+  @objc public static func flushGamingEvents(_ reason: Linkzly::LinkzlyGamingFlushReason = .manualFlush, completion: ((Swift::Bool, (any Swift::Error)?) -> Swift::Void)? = nil)
+  @objc public static func setGamingAttribution(clickId: Swift::String?, deferredDeepLink: Swift::String?, metadata: [Swift::String : Any]? = nil)
   @objc public static func clearGamingAttribution()
-  @objc public static func getGamingStatus(_ completion: @escaping (Linkzly.LinkzlyGamingStatus) -> Swift.Void)
+  @objc public static func getGamingStatus(_ completion: @escaping (Linkzly::LinkzlyGamingStatus) -> Swift::Void)
 }
-@objc public class DeepLinkData : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let url: Swift.String?
-  @objc final public let path: Swift.String?
-  @objc final public let smartLinkId: Swift.String?
-  @objc final public let clickId: Swift.String?
-  final public let parameters: [Swift.String : Any]
-  public init(url: Swift.String? = nil, path: Swift.String? = nil, smartLinkId: Swift.String? = nil, clickId: Swift.String? = nil, parameters: [Swift.String : Any] = [:])
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc public func getParameter(_ key: Swift.String) -> Any?
-  @objc public func getStringParameter(_ key: Swift.String) -> Swift.String?
-  @objc public func getNumberParameter(_ key: Swift.String) -> Foundation.NSNumber?
-  @objc public func getBoolParameter(_ key: Swift.String) -> Swift.Bool
-  @objc public var allParameters: Foundation.NSDictionary {
+@objc public enum ConsentState : Swift::Int {
+  case unspecified = 0
+  case granted = 1
+  case denied = 2
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
+    get
+  }
+}
+public struct ConsentSnapshot : Swift::Codable, Swift::Equatable {
+  public let analytics: Linkzly::ConsentState?
+  public let adUserData: Linkzly::ConsentState?
+  public let adPersonalization: Linkzly::ConsentState?
+  public let capturedAt: Foundation::Date
+  public init(analytics: Linkzly::ConsentState? = nil, adUserData: Linkzly::ConsentState? = nil, adPersonalization: Linkzly::ConsentState? = nil, capturedAt: Foundation::Date)
+  public init(from decoder: any Swift::Decoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
+  public static func == (a: Linkzly::ConsentSnapshot, b: Linkzly::ConsentSnapshot) -> Swift::Bool
+}
+@objc public class DeepLinkData : ObjectiveC::NSObject, Swift::Codable {
+  @objc final public let url: Swift::String?
+  @objc final public let path: Swift::String?
+  @objc final public let smartLinkId: Swift::String?
+  @objc final public let clickId: Swift::String?
+  final public let parameters: [Swift::String : Any]
+  public init(url: Swift::String? = nil, path: Swift::String? = nil, smartLinkId: Swift::String? = nil, clickId: Swift::String? = nil, parameters: [Swift::String : Any] = [:])
+  required public init(from decoder: any Swift::Decoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
+  @objc public func getParameter(_ key: Swift::String) -> Any?
+  @objc public func getStringParameter(_ key: Swift::String) -> Swift::String?
+  @objc public func getNumberParameter(_ key: Swift::String) -> Foundation::NSNumber?
+  @objc public func getBoolParameter(_ key: Swift::String) -> Swift::Bool
+  @objc public var allParameters: Foundation::NSDictionary {
     @objc get
   }
-  @objc override dynamic public var description: Swift.String {
+  @objc override dynamic public var description: Swift::String {
     @objc get
   }
   @objc deinit
 }
-public enum EventType : Swift.String, Swift.CaseIterable, Swift.Codable {
+public enum EventType : Swift::String, Swift::CaseIterable, Swift::Codable {
   case install
   case open
   case purchase
   case custom
   case sessionEnd
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [Linkzly.EventType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [Linkzly.EventType] {
+  public init?(rawValue: Swift::String)
+  public typealias AllCases = [Linkzly::EventType]
+  public typealias RawValue = Swift::String
+  nonisolated public static var allCases: [Linkzly::EventType] {
     get
   }
-  public var rawValue: Swift.String {
+  public var rawValue: Swift::String {
     get
   }
 }
-public struct AnyCodable : Swift.Codable {
+public struct AnyCodable : Swift::Codable {
   public let value: Any
   public init(_ value: Any)
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-public struct AffiliateAttribution : Swift.Codable {
-  public let clickId: Swift.String?
-  public let programId: Swift.String?
-  public let affiliateId: Swift.String?
-  public let timestamp: Swift.Int?
-  public let source: Linkzly.AffiliateAttributionSource
-  public var hasAttribution: Swift.Bool {
+public struct AffiliateAttribution : Swift::Codable {
+  public let clickId: Swift::String?
+  public let programId: Swift::String?
+  public let affiliateId: Swift::String?
+  public let timestamp: Swift::Int?
+  public let source: Linkzly::AffiliateAttributionSource
+  public var hasAttribution: Swift::Bool {
     get
   }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-public enum AffiliateAttributionSource : Swift.String, Swift.Codable {
+public enum AffiliateAttributionSource : Swift::String, Swift::Codable {
   case deepLink
   case stored
   case none
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
 @_hasMissingDesignatedInitializers public class AffiliateService {
   @discardableResult
-  public static func captureAttribution(from url: Foundation.URL) -> Swift.Bool
-  public static func getAttribution() -> Linkzly.AffiliateAttribution
-  public static func getClickId() -> Swift.String?
-  public static func hasAttribution() -> Swift.Bool
+  public static func captureAttribution(from url: Foundation::URL) -> Swift::Bool
+  public static func getAttribution() -> Linkzly::AffiliateAttribution
+  public static func getClickId() -> Swift::String?
+  public static func hasAttribution() -> Swift::Bool
   public static func clearAttribution()
   @objc deinit
 }
-extension Foundation.NSNotification.Name {
-  public static let linkzlyAffiliateAttributionCaptured: Foundation.Notification.Name
+extension Foundation::NSNotification.Foundation::Name {
+  public static let linkzlyAffiliateAttributionCaptured: Foundation::Notification.Foundation::Name
 }
-public struct DeviceRegistrationResponse : Swift.Codable {
-  public let subscriptionId: Swift.String?
-  public let status: Swift.String?
-  public let broadcastTopic: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct DeviceRegistrationResponse : Swift::Codable {
+  public let subscriptionId: Swift::String?
+  public let status: Swift::String?
+  public let broadcastTopic: Swift::String?
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-public struct TrackingResponse : Swift.Codable {
-  public let success: Swift.Bool
-  public let eventId: Swift.String?
-  public let deepLinkData: [Swift.String : Linkzly.AnyCodable]?
-  public let attribution: Linkzly.TrackingResponse.AttributionData?
-  public let error: Swift.String?
-  public let message: Swift.String?
-  public let code: Swift.String?
-  public let invalidKeys: [Swift.String]?
-  public init(success: Swift.Bool, eventId: Swift.String?, deepLinkData: [Swift.String : Linkzly.AnyCodable]?, attribution: Linkzly.TrackingResponse.AttributionData?, error: Swift.String? = nil, message: Swift.String? = nil, code: Swift.String? = nil, invalidKeys: [Swift.String]? = nil)
-  public struct AttributionData : Swift.Codable {
-    public let smartLinkId: Swift.String
-    public let clickId: Swift.String?
-    public let confidence: Swift.Double
-    public let attributionMethod: Swift.String?
-    public init(smartLinkId: Swift.String, clickId: Swift.String?, confidence: Swift.Double, attributionMethod: Swift.String?)
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
+public struct TrackingResponse : Swift::Codable {
+  public let success: Swift::Bool
+  public let eventId: Swift::String?
+  public let deepLinkData: [Swift::String : Linkzly::AnyCodable]?
+  public let attribution: Linkzly::TrackingResponse.Linkzly::AttributionData?
+  public let error: Swift::String?
+  public let message: Swift::String?
+  public let code: Swift::String?
+  public let invalidKeys: [Swift::String]?
+  public init(from decoder: any Swift::Decoder) throws
+  public init(success: Swift::Bool, eventId: Swift::String?, deepLinkData: [Swift::String : Linkzly::AnyCodable]?, attribution: Linkzly::TrackingResponse.Linkzly::AttributionData?, error: Swift::String? = nil, message: Swift::String? = nil, code: Swift::String? = nil, invalidKeys: [Swift::String]? = nil)
+  public struct AttributionData : Swift::Codable {
+    public let smartLinkId: Swift::String
+    public let clickId: Swift::String?
+    public let confidence: Swift::Double
+    public let attributionMethod: Swift::String?
+    public init(smartLinkId: Swift::String, clickId: Swift::String?, confidence: Swift::Double, attributionMethod: Swift::String?)
+    public func encode(to encoder: any Swift::Encoder) throws
+    public init(from decoder: any Swift::Decoder) throws
   }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-@objc public enum Environment : Swift.Int {
+@objc public enum Environment : Swift::Int {
   case production = 0
   case staging = 1
   case development = 2
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public enum LinkzlyError : Swift.Error, Foundation.LocalizedError {
+public enum LinkzlyError : Swift::Error, Foundation::LocalizedError {
   case notConfigured
   case invalidSDKKey
-  case networkError(any Swift.Error)
+  case networkError(any Swift::Error)
   case invalidResponse
   case noDeepLinkData
-  public var errorDescription: Swift.String? {
+  public var errorDescription: Swift::String? {
     get
   }
 }
-public typealias DeepLinkHandler = (_ deepLinkData: Linkzly.DeepLinkData, _ url: Swift.String?) -> Swift.Void
-public typealias UniversalLinkHandler = (_ url: Foundation.URL, _ attributionData: [Swift.String : Any]) -> Swift.Void
-@_hasMissingDesignatedInitializers @objc public class LinkzlySDK : ObjectiveC.NSObject {
-  @objc public static var shared: Linkzly.LinkzlySDK? {
+public typealias DeepLinkHandler = (_ deepLinkData: Linkzly::DeepLinkData, _ url: Swift::String?) -> Swift::Void
+public typealias UniversalLinkHandler = (_ url: Foundation::URL, _ attributionData: [Swift::String : Any]) -> Swift::Void
+@_hasMissingDesignatedInitializers @objc public class LinkzlySDK : ObjectiveC::NSObject {
+  @objc public static var shared: Linkzly::LinkzlySDK? {
     @objc get
   }
-  @objc public static func configure(sdkKey: Swift.String, environment: Linkzly.Environment = .production)
-  @objc public static func onDeepLink(_ handler: @escaping Linkzly.DeepLinkHandler)
-  @objc public static func onUniversalLink(_ handler: @escaping Linkzly.UniversalLinkHandler)
-  @objc public static func handleUniversalLink(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
-  @objc(handleUniversalLinkWithURL:) public static func handleUniversalLink(_ url: Foundation.URL) -> Swift.Bool
-  public static func trackInstall(completion: @escaping (Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> Swift.Void)
-  public static func trackOpen(completion: @escaping (Swift.Result<Linkzly.DeepLinkData?, any Swift.Error>) -> Swift.Void)
-  @objc public static func trackEvent(_ eventName: Swift.String, parameters: [Swift.String : Any]? = nil)
+  @objc public static func configure(sdkKey: Swift::String, environment: Linkzly::Environment = .production)
+  @objc public static func onDeepLink(_ handler: @escaping Linkzly::DeepLinkHandler)
+  @objc public static func onUniversalLink(_ handler: @escaping Linkzly::UniversalLinkHandler)
+  @objc public static func handleUniversalLink(_ userActivity: Foundation::NSUserActivity) -> Swift::Bool
+  @objc(handleUniversalLinkWithURL:) public static func handleUniversalLink(_ url: Foundation::URL) -> Swift::Bool
+  public static func trackInstall(completion: @escaping (Swift::Result<Linkzly::DeepLinkData?, any Swift::Error>) -> Swift::Void)
+  public static func trackOpen(completion: @escaping (Swift::Result<Linkzly::DeepLinkData?, any Swift::Error>) -> Swift::Void)
+  @objc public static func trackEvent(_ eventName: Swift::String, parameters: [Swift::String : Any]? = nil)
   @discardableResult
-  public static func trackPurchase(parameters: [Swift.String : Any] = [:], completion: ((Swift.Result<Linkzly.TrackingResponse, any Swift.Error>) -> Swift.Void)? = nil) -> Linkzly.LinkzlySDK?
+  public static func trackPurchase(parameters: [Swift::String : Any] = [:], completion: ((Swift::Result<Linkzly::TrackingResponse, any Swift::Error>) -> Swift::Void)? = nil) -> Linkzly::LinkzlySDK?
   @discardableResult
-  public static func trackRefund(parameters: [Swift.String : Any] = [:], completion: ((Swift.Result<Linkzly.TrackingResponse, any Swift.Error>) -> Swift.Void)? = nil) -> Linkzly.LinkzlySDK?
+  public static func trackRefund(parameters: [Swift::String : Any] = [:], completion: ((Swift::Result<Linkzly::TrackingResponse, any Swift::Error>) -> Swift::Void)? = nil) -> Linkzly::LinkzlySDK?
   @discardableResult
-  public static func flushEvents(completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void) -> Linkzly.LinkzlySDK?
-  public static func getPendingEventCount() -> Swift.Int
-  @objc public static func trackEventBatch(_ events: [[Swift.String : Any]], completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  @objc public static func setUserID(_ userID: Swift.String)
-  @objc public static func getUserID() -> Swift.String?
-  @objc public static func setNotificationToken(_ token: Swift.String)
-  @objc public static func getNotificationToken() -> Swift.String?
-  @objc public static func hasNotificationToken() -> Swift.Bool
+  public static func flushEvents(completion: @escaping (Swift::Bool, (any Swift::Error)?) -> Swift::Void) -> Linkzly::LinkzlySDK?
+  public static func getPendingEventCount() -> Swift::Int
+  @objc public static func trackEventBatch(_ events: [[Swift::String : Any]], completion: @escaping (Swift::Bool, (any Swift::Error)?) -> Swift::Void)
+  @objc public static func setUserID(_ userID: Swift::String)
+  @objc public static func getUserID() -> Swift::String?
+  @objc public static func setNotificationToken(_ token: Swift::String)
+  @objc public static func getNotificationToken() -> Swift::String?
+  @objc public static func hasNotificationToken() -> Swift::Bool
   @objc public static func clearNotificationToken()
-  @objc public static func setTrackingEnabled(_ enabled: Swift.Bool)
-  @objc public static func isTrackingEnabled() -> Swift.Bool
-  @objc public static func setAdvertisingTrackingEnabled(_ enabled: Swift.Bool)
-  @objc public static func isAdvertisingTrackingEnabled() -> Swift.Bool
+  public static func setConsent(analytics: Linkzly::ConsentState? = nil, adUserData: Linkzly::ConsentState? = nil, adPersonalization: Linkzly::ConsentState? = nil)
+  public static func getConsent() -> Linkzly::ConsentSnapshot?
+  @objc public static func setTrackingEnabled(_ enabled: Swift::Bool)
+  @objc public static func isTrackingEnabled() -> Swift::Bool
+  @objc public static func setAdvertisingTrackingEnabled(_ enabled: Swift::Bool)
+  @objc public static func isAdvertisingTrackingEnabled() -> Swift::Bool
   @available(iOS 14.5, *)
-  public static func requestTrackingPermission(completion: @escaping (Swift.Result<AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, any Swift.Error>) -> Swift.Void)
+  public static func requestTrackingPermission(completion: @escaping (Swift::Result<AppTrackingTransparency::ATTrackingManager.AppTrackingTransparency::AuthorizationStatus, any Swift::Error>) -> Swift::Void)
   @available(iOS 14.5, *)
-  @objc public static func requestTrackingPermissionObjC(completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
-  @objc public static func getIDFA() -> Swift.String?
-  @objc public static func getATTStatus() -> Swift.String?
-  @objc public static func getVisitorID() -> Swift.String
+  @objc public static func requestTrackingPermissionObjC(completion: @escaping (Swift::String?, (any Swift::Error)?) -> Swift::Void)
+  @objc public static func getIDFA() -> Swift::String?
+  @objc public static func getATTStatus() -> Swift::String?
+  @objc public static func getVisitorID() -> Swift::String
   @objc public static func resetVisitorID()
   @available(iOS 14.0, *)
-  @objc public static func updateConversionValue(_ value: Swift.Int)
+  @objc public static func updateConversionValue(_ value: Swift::Int)
   @available(iOS 14.0, *)
-  @objc public static func updateConversionValue(_ value: Swift.Int, completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public static func updateConversionValue(_ value: Swift::Int, completion: @escaping (Swift::Bool) -> Swift::Void)
   @available(iOS 16.1, *)
-  public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue)
+  public static func updateConversionValue(_ fineValue: Swift::Int, coarseValue: StoreKit::SKAdNetwork.StoreKit::CoarseConversionValue)
   @available(iOS 16.1, *)
-  public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public static func updateConversionValue(_ fineValue: Swift::Int, coarseValue: StoreKit::SKAdNetwork.StoreKit::CoarseConversionValue, completion: @escaping (Swift::Bool) -> Swift::Void)
   @available(iOS 16.1, *)
-  public static func updateConversionValue(_ fineValue: Swift.Int, coarseValue: StoreKit.SKAdNetwork.CoarseConversionValue, lockWindow: Swift.Bool, completion: @escaping (Swift.Bool) -> Swift.Void)
+  public static func updateConversionValue(_ fineValue: Swift::Int, coarseValue: StoreKit::SKAdNetwork.StoreKit::CoarseConversionValue, lockWindow: Swift::Bool, completion: @escaping (Swift::Bool) -> Swift::Void)
   @discardableResult
-  @objc public static func initializePush() -> Swift.Bool
+  @objc public static func initializePush() -> Swift::Bool
   @discardableResult
-  @objc public static func disablePush() -> Swift.Bool
+  @objc public static func disablePush() -> Swift::Bool
   @discardableResult
-  @objc public static func captureAffiliateAttribution(from url: Foundation.URL) -> Swift.Bool
-  public static func getAffiliateAttribution() -> Linkzly.AffiliateAttribution
-  @objc public static func getAffiliateClickId() -> Swift.String?
-  @objc public static func hasAffiliateAttribution() -> Swift.Bool
+  @objc public static func captureAffiliateAttribution(from url: Foundation::URL) -> Swift::Bool
+  public static func getAffiliateAttribution() -> Linkzly::AffiliateAttribution
+  @objc public static func getAffiliateClickId() -> Swift::String?
+  @objc public static func hasAffiliateAttribution() -> Swift::Bool
   @objc public static func clearAffiliateAttribution()
   @objc deinit
 }
-extension Foundation.NSNotification.Name {
-  public static let linkzlyUniversalLinkReceived: Foundation.Notification.Name
-  public static let linkzlyDeepLinkDataReceived: Foundation.Notification.Name
-  public static let linkzlyServerConfigReceived: Foundation.Notification.Name
+extension Foundation::NSNotification.Foundation::Name {
+  public static let linkzlyUniversalLinkReceived: Foundation::Notification.Foundation::Name
+  public static let linkzlyDeepLinkDataReceived: Foundation::Notification.Foundation::Name
+  public static let linkzlyServerConfigReceived: Foundation::Notification.Foundation::Name
 }
-@objc extension Linkzly.LinkzlySDK {
-  @objc public static func configure(sdkKey: Swift.String)
-  @objc public static func trackInstallObjC(completion: @escaping (Linkzly.DeepLinkData?, (any Swift.Error)?) -> Swift.Void)
-  @objc public static func trackOpenObjC(completion: @escaping (Linkzly.DeepLinkData?, (any Swift.Error)?) -> Swift.Void)
-  @objc public static func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
-  @objc public static func application(_ application: UIKit.UIApplication, continue userActivity: Foundation.NSUserActivity, restorationHandler: @escaping ([any UIKit.UIUserActivityRestoring]?) -> Swift.Void) -> Swift.Bool
+@objc extension Linkzly::LinkzlySDK {
+  @objc public static func configure(sdkKey: Swift::String)
+  @objc public static func trackInstallObjC(completion: @escaping (Linkzly::DeepLinkData?, (any Swift::Error)?) -> Swift::Void)
+  @objc public static func trackOpenObjC(completion: @escaping (Linkzly::DeepLinkData?, (any Swift::Error)?) -> Swift::Void)
+  @objc public static func application(_ app: UIKit::UIApplication, open url: Foundation::URL, options: [UIKit::UIApplication.UIKit::OpenURLOptionsKey : Any] = [:]) -> Swift::Bool
+  @objc public static func application(_ application: UIKit::UIApplication, continue userActivity: Foundation::NSUserActivity, restorationHandler: @escaping ([any UIKit::UIUserActivityRestoring]?) -> Swift::Void) -> Swift::Bool
 }
-extension Linkzly.LinkzlyGamingFlushReason : Swift.Equatable {}
-extension Linkzly.LinkzlyGamingFlushReason : Swift.Hashable {}
-extension Linkzly.LinkzlyGamingFlushReason : Swift.RawRepresentable {}
-extension Linkzly.EventType : Swift.Equatable {}
-extension Linkzly.EventType : Swift.Hashable {}
-extension Linkzly.EventType : Swift.RawRepresentable {}
-extension Linkzly.AffiliateAttributionSource : Swift.Equatable {}
-extension Linkzly.AffiliateAttributionSource : Swift.Hashable {}
-extension Linkzly.AffiliateAttributionSource : Swift.RawRepresentable {}
-extension Linkzly.Environment : Swift.Equatable {}
-extension Linkzly.Environment : Swift.Hashable {}
-extension Linkzly.Environment : Swift.RawRepresentable {}
+extension Linkzly::LinkzlyGamingFlushReason : Swift::Equatable {}
+extension Linkzly::LinkzlyGamingFlushReason : Swift::Hashable {}
+extension Linkzly::LinkzlyGamingFlushReason : Swift::RawRepresentable {}
+extension Linkzly::ConsentState : Swift::Equatable {}
+extension Linkzly::ConsentState : Swift::Hashable {}
+extension Linkzly::ConsentState : Swift::RawRepresentable {}
+extension Linkzly::EventType : Swift::Equatable {}
+extension Linkzly::EventType : Swift::Hashable {}
+extension Linkzly::EventType : Swift::RawRepresentable {}
+extension Linkzly::AffiliateAttributionSource : Swift::Equatable {}
+extension Linkzly::AffiliateAttributionSource : Swift::Hashable {}
+extension Linkzly::AffiliateAttributionSource : Swift::RawRepresentable {}
+extension Linkzly::Environment : Swift::Equatable {}
+extension Linkzly::Environment : Swift::Hashable {}
+extension Linkzly::Environment : Swift::RawRepresentable {}

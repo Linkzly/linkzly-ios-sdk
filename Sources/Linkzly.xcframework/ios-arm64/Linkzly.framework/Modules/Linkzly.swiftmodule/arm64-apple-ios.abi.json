@@ -2351,6 +2351,713 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ConsentState",
+        "printedName": "ConsentState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unspecified",
+            "printedName": "unspecified",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.ConsentState.Type) -> Linkzly.ConsentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.ConsentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@ConsentState@ConsentStateUnspecified",
+            "mangledName": "$s7Linkzly12ConsentStateO11unspecifiedyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "granted",
+            "printedName": "granted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.ConsentState.Type) -> Linkzly.ConsentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.ConsentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@ConsentState@ConsentStateGranted",
+            "mangledName": "$s7Linkzly12ConsentStateO7grantedyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "denied",
+            "printedName": "denied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Linkzly.ConsentState.Type) -> Linkzly.ConsentState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Linkzly.ConsentState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Linkzly@E@ConsentState@ConsentStateDenied",
+            "mangledName": "$s7Linkzly12ConsentStateO6deniedyA2CmF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly12ConsentStateO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7Linkzly12ConsentStateO8rawValueACSgSi_tcfc",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly12ConsentStateO8rawValueSivp",
+            "mangledName": "$s7Linkzly12ConsentStateO8rawValueSivp",
+            "moduleName": "Linkzly",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly12ConsentStateO8rawValueSivg",
+                "mangledName": "$s7Linkzly12ConsentStateO8rawValueSivg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Linkzly@E@ConsentState",
+        "mangledName": "$s7Linkzly12ConsentStateO",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConsentSnapshot",
+        "printedName": "ConsentSnapshot",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "analytics",
+            "printedName": "analytics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly15ConsentSnapshotV9analyticsAA0B5StateOSgvp",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV9analyticsAA0B5StateOSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Linkzly.ConsentState?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly15ConsentSnapshotV9analyticsAA0B5StateOSgvg",
+                "mangledName": "$s7Linkzly15ConsentSnapshotV9analyticsAA0B5StateOSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adUserData",
+            "printedName": "adUserData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly15ConsentSnapshotV10adUserDataAA0B5StateOSgvp",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV10adUserDataAA0B5StateOSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Linkzly.ConsentState?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly15ConsentSnapshotV10adUserDataAA0B5StateOSgvg",
+                "mangledName": "$s7Linkzly15ConsentSnapshotV10adUserDataAA0B5StateOSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adPersonalization",
+            "printedName": "adPersonalization",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly15ConsentSnapshotV17adPersonalizationAA0B5StateOSgvp",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV17adPersonalizationAA0B5StateOSgvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Linkzly.ConsentState?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConsentState",
+                        "printedName": "Linkzly.ConsentState",
+                        "usr": "c:@M@Linkzly@E@ConsentState"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly15ConsentSnapshotV17adPersonalizationAA0B5StateOSgvg",
+                "mangledName": "$s7Linkzly15ConsentSnapshotV17adPersonalizationAA0B5StateOSgvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "capturedAt",
+            "printedName": "capturedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Linkzly15ConsentSnapshotV10capturedAt10Foundation4DateVvp",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV10capturedAt10Foundation4DateVvp",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Linkzly15ConsentSnapshotV10capturedAt10Foundation4DateVvg",
+                "mangledName": "$s7Linkzly15ConsentSnapshotV10capturedAt10Foundation4DateVvg",
+                "moduleName": "Linkzly",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(analytics:adUserData:adPersonalization:capturedAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentSnapshot",
+                "printedName": "Linkzly.ConsentSnapshot",
+                "usr": "s:7Linkzly15ConsentSnapshotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly15ConsentSnapshotV9analytics10adUserData0E15Personalization10capturedAtAcA0B5StateOSg_A2J10Foundation4DateVtcfc",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV9analytics10adUserData0E15Personalization10capturedAtAcA0B5StateOSg_A2J10Foundation4DateVtcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentSnapshot",
+                "printedName": "Linkzly.ConsentSnapshot",
+                "usr": "s:7Linkzly15ConsentSnapshotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly15ConsentSnapshotV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly15ConsentSnapshotV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentSnapshot",
+                "printedName": "Linkzly.ConsentSnapshot",
+                "usr": "s:7Linkzly15ConsentSnapshotV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConsentSnapshot",
+                "printedName": "Linkzly.ConsentSnapshot",
+                "usr": "s:7Linkzly15ConsentSnapshotV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly15ConsentSnapshotV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7Linkzly15ConsentSnapshotV2eeoiySbAC_ACtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7Linkzly15ConsentSnapshotV",
+        "mangledName": "$s7Linkzly15ConsentSnapshotV",
+        "moduleName": "Linkzly",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DeepLinkData",
         "printedName": "DeepLinkData",
         "children": [
@@ -3757,7 +4464,8 @@
             "mangledName": "$s7Linkzly10AnyCodableV6encode2toys7Encoder_p_tKF",
             "moduleName": "Linkzly",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -3801,6 +4509,13 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
       },
       {
         "kind": "Import",
@@ -4681,6 +5396,20 @@
       },
       {
         "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4702,8 +5431,64 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "AdAttributionKit",
+        "printedName": "AdAttributionKit",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
         "name": "Network",
         "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Linkzly"
       },
@@ -5507,6 +6292,35 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrackingResponse",
+                "printedName": "Linkzly.TrackingResponse",
+                "usr": "s:7Linkzly16TrackingResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Linkzly",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(success:eventId:deepLinkData:attribution:error:message:code:invalidKeys:)",
             "children": [
               {
@@ -6020,32 +6834,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TrackingResponse",
-                "printedName": "Linkzly.TrackingResponse",
-                "usr": "s:7Linkzly16TrackingResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s7Linkzly16TrackingResponseV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "Linkzly",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
@@ -6108,6 +6896,13 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
       },
       {
         "kind": "Import",
@@ -6183,6 +6978,13 @@
         "kind": "Import",
         "name": "os.log",
         "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Linkzly"
       },
@@ -7820,6 +8622,106 @@
           },
           {
             "kind": "Function",
+            "name": "setConsent",
+            "printedName": "setConsent(analytics:adUserData:adPersonalization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentState",
+                    "printedName": "Linkzly.ConsentState",
+                    "usr": "c:@M@Linkzly@E@ConsentState"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC10setConsent9analytics10adUserData0F15PersonalizationyAA0D5StateOSg_A2JtFZ",
+            "mangledName": "$s7Linkzly0A3SDKC10setConsent9analytics10adUserData0F15PersonalizationyAA0D5StateOSg_A2JtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsent",
+            "printedName": "getConsent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Linkzly.ConsentSnapshot?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConsentSnapshot",
+                    "printedName": "Linkzly.ConsentSnapshot",
+                    "usr": "s:7Linkzly15ConsentSnapshotV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Linkzly0A3SDKC10getConsentAA0D8SnapshotVSgyFZ",
+            "mangledName": "$s7Linkzly0A3SDKC10getConsentAA0D8SnapshotVSgyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setTrackingEnabled",
             "printedName": "setTrackingEnabled(_:)",
             "children": [
@@ -7843,8 +8745,7 @@
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9784,8 +10685,7 @@
           "SynthesizedProtocol",
           "SynthesizedProtocol",
           "SynthesizedProtocol",
-          "SynthesizedProtocol",
-          "Sendable"
+          "SynthesizedProtocol"
         ],
         "isFromExtension": true,
         "isExternal": true,
@@ -10156,6 +11056,41 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Consent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Consent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 177,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Consent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 197,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Consent.swift",
+      "kind": "StringLiteral",
+      "offset": 3318,
+      "length": 17,
+      "value": "\"linkzly_consent\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/Consent.swift",
+      "kind": "StringLiteral",
+      "offset": 3372,
+      "length": 31,
+      "value": "\"linkzly_consent_pending_posts\""
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/DeepLinkData.swift",
       "kind": "Dictionary",
       "offset": 561,
@@ -10270,16 +11205,58 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
       "kind": "Dictionary",
-      "offset": 1007,
+      "offset": 1387,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
       "kind": "IntegerLiteral",
-      "offset": 4153,
+      "offset": 2124,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6508,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7389,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/EventData.swift",
+      "kind": "Array",
+      "offset": 8429,
+      "length": 223,
+      "value": "[\"parser_version\", \"provider_name\", \"provider_slug\", \"referrer_domain\", \"attribution_signal\", \"attribution_confidence\", \"traffic_channel\", \"bot_score\", \"bot_name\", \"bot_reason\", \"device_data\"]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/RevenueFacts.swift",
+      "kind": "Array",
+      "offset": 488,
+      "length": 158,
+      "value": "[\"originalTransactionId\", \"original_transaction_id\", \"refundId\", \"refund_id\", \"isRenewal\", \"is_renewal\", \"environment\"]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/RevenueFacts.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Models\/RevenueFacts.swift",
+      "kind": "IntegerLiteral",
+      "offset": 719,
+      "length": 2,
+      "value": "64"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
@@ -10450,6 +11427,209 @@
       "value": "\"linkzlyAffiliateAttributionCaptured\""
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 266,
+      "length": 4,
+      "value": "4096"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 667,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 15,
+      "value": "\"AAAttribution\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "StringLiteral",
+      "offset": 1796,
+      "length": 60,
+      "value": "\"\/System\/Library\/Frameworks\/AdServices.framework\/AdServices\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "StringLiteral",
+      "offset": 1929,
+      "length": 15,
+      "value": "\"AAAttribution\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AppleAdsTokenReader.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 28,
+      "value": "\"attributionTokenWithError:\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AttributionService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 511,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1078,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1117,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4889,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5308,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5313,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueEngine.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5390,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 976,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1047,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1132,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1271,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1424,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7704,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 703,
+      "length": 6,
+      "value": "86400"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 734,
+      "length": 5,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 764,
+      "length": 7,
+      "value": "604800"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1013,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1677,
+      "length": 27,
+      "value": "\"linkzly_skan_installed_at\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 21,
+      "value": "\"linkzly_skan_events\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1781,
+      "length": 21,
+      "value": "\"linkzly_skan_schema\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "StringLiteral",
+      "offset": 1828,
+      "length": 19,
+      "value": "\"linkzly_skan_last\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/ConversionValueStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1941,
+      "length": 3,
+      "value": "100"
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
       "kind": "StringLiteral",
       "offset": 310,
@@ -10464,11 +11644,235 @@
       "value": "\"linkzly_server_batch_config\""
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1316,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16023,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17789,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17796,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17844,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17881,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17932,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18043,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18050,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18211,
+      "length": 107,
+      "value": "\"Queue too large (\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18238,
+      "length": 2,
+      "value": "\"KB): dropped the \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18283,
+      "length": 6,
+      "value": "\" oldest events, kept \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18317,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18409,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18438,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18475,
+      "length": 25,
+      "value": "\"Queue size: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18497,
+      "length": 2,
+      "value": "\"KB\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18611,
+      "length": 55,
+      "value": "\"Failed to encode queue: \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/EventQueueService.swift",
+      "kind": "StringLiteral",
+      "offset": 18665,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 22,
+      "value": "\"linkzly_first_launch\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1584,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1589,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1690,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1695,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/FirstLaunchDecision.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1700,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "IntegerLiteral",
+      "offset": 530,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "IntegerLiteral",
+      "offset": 539,
+      "length": 4,
+      "value": "3600"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/PendingInstall.swift",
+      "kind": "StringLiteral",
+      "offset": 1499,
+      "length": 25,
+      "value": "\"linkzly_install_pending\""
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Utils\/KeychainHelper.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 17,
       "value": "\"com.linkzly.sdk\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Utils\/KeychainHelper.swift",
+      "kind": "Dictionary",
+      "offset": 568,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
@@ -10493,43 +11897,57 @@
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2453,
+      "length": 7,
+      "value": "\"1.0.8\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2773,
+      "length": 20,
+      "value": "\"LinkzlySDK\/1.1 iOS\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 16017,
+      "offset": 13606,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 17382,
+      "offset": 15021,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 34878,
+      "offset": 34915,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 34973,
+      "offset": 35010,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 35067,
+      "offset": 35104,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 36418,
+      "offset": 36455,
       "length": 3,
       "value": "[]"
     }

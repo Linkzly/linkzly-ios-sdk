@@ -1,7 +1,7 @@
 # LinkzlySDK for iOS
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.7+-orange.svg)](https://swift.org)
-[![Platform](https://img.shields.io/badge/Platform-iOS%2012.0%2B-lightgrey.svg)](https://developer.apple.com)
+[![Platform](https://img.shields.io/badge/Platform-iOS%2015.0%2B-lightgrey.svg)](https://developer.apple.com)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://swift.org/package-manager)
 
 LinkzlySDK is a powerful iOS SDK for deep linking and attribution tracking. Track app installs, opens, and custom events while seamlessly handling Universal Links for deferred deep linking.
@@ -33,7 +33,7 @@ If you use an AI coding agent (Claude Code, Codex, Cursor, GitHub Copilot, Antig
 
 | Component | Value |
 |-----------|-------|
-| Minimum deployment target declared by the SDK | iOS 12.0 |
+| Minimum deployment target declared by the SDK | iOS 15.0 |
 | Swift tools version declared by the package | 5.7 |
 
 **Language Support:**
@@ -62,7 +62,7 @@ Your SDK key (`slk_` prefix) authenticates your app with Linkzly's servers. You 
 
 ## Installation
 
-**SDK version:** 1.0.7
+**SDK version:** 1.0.8
 
 ### Swift Package Manager
 
@@ -77,7 +77,7 @@ Or add it to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Linkzly/linkzly-ios-sdk.git", from: "1.0.7")
+    .package(url: "https://github.com/Linkzly/linkzly-ios-sdk.git", from: "1.0.8")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [.product(name: "Linkzly", package: "linkzly-ios-sdk")])
@@ -89,7 +89,7 @@ targets: [
 `LinkzlySDK` is not published to CocoaPods Trunk, so the pod needs its Git source and tag:
 
 ```ruby
-pod 'LinkzlySDK', :git => 'https://github.com/Linkzly/linkzly-ios-sdk.git', :tag => '1.0.7'
+pod 'LinkzlySDK', :git => 'https://github.com/Linkzly/linkzly-ios-sdk.git', :tag => '1.0.8'
 ```
 
 Then import the module. The module is named `Linkzly`; the class you call is `LinkzlySDK`.

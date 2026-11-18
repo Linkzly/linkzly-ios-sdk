@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LinkzlySDK'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Linkzly iOS SDK for deep linking and attribution tracking'
   s.description      = <<-DESC
 LinkzlySDK is a powerful iOS SDK for deep linking, attribution tracking, and analytics.
@@ -13,7 +13,7 @@ and comprehensive event tracking with privacy controls.
   s.author           = { 'Linkzly' => 'support@linkzly.com' }
   s.source           = { :git => 'https://github.com/MarenTech/linkzly-ios-sdk.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '15.0'
   s.osx.deployment_target = '10.14'
   s.swift_version = '5.0'
 
