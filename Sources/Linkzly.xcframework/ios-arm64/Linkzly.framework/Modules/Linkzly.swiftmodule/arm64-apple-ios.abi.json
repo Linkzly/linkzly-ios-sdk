@@ -4532,6 +4532,20 @@
         "moduleName": "Linkzly"
       },
       {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Linkzly"
+      },
+      {
         "kind": "TypeDecl",
         "name": "AffiliateAttribution",
         "printedName": "AffiliateAttribution",
@@ -8622,6 +8636,89 @@
           },
           {
             "kind": "Function",
+            "name": "trackNotificationOpen",
+            "printedName": "trackNotificationOpen(userInfo:actionIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)trackNotificationOpenWithUserInfo:actionIdentifier:",
+            "mangledName": "$s7Linkzly0A3SDKC21trackNotificationOpen8userInfo16actionIdentifierySDys11AnyHashableVypG_SSSgtFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "objc_name": "trackNotificationOpenWithUserInfo:actionIdentifier:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "installNotificationOpenCapture",
+            "printedName": "installNotificationOpenCapture()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Linkzly@objc(cs)LinkzlySDK(cm)installNotificationOpenCapture",
+            "mangledName": "$s7Linkzly0A3SDKC30installNotificationOpenCaptureyyFZ",
+            "moduleName": "Linkzly",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setConsent",
             "printedName": "setConsent(analytics:adUserData:adPersonalization:)",
             "children": [
@@ -11350,6 +11447,146 @@
       "value": "60"
     },
     {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2321,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "Dictionary",
+      "offset": 2522,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2779,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12226,
+      "length": 49,
+      "value": "\"com.apple.UNNotificationDefaultActionIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/LinkzlyNotificationHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12317,
+      "length": 49,
+      "value": "\"com.apple.UNNotificationDismissActionIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
+      "length": 35,
+      "value": "\"LinkzlyAutoTrackNotificationOpens\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1921,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 2141,
+      "length": 78,
+      "value": "\"userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 2262,
+      "length": 9,
+      "value": "\"v@:@@@?\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 2339,
+      "length": 14,
+      "value": "\"setDelegate:\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 2397,
+      "length": 6,
+      "value": "\"v@:@\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 3123,
+      "length": 26,
+      "value": "\"UNUserNotificationCenter\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 3233,
+      "length": 26,
+      "value": "\"UNUserNotificationCenter\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 3333,
+      "length": 27,
+      "value": "\"currentNotificationCenter\""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4153,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4229,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4935,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "Array",
+      "offset": 5029,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 9054,
+      "length": 119,
+      "value": "\"Notification delegate \""
+    },
+    {
+      "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Notification\/NotificationOpenCapture.swift",
+      "kind": "StringLiteral",
+      "offset": 9112,
+      "length": 3,
+      "value": "\" has no didReceive method - taps are not captured through it\""
+    },
+    {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/Services\/AffiliateService.swift",
       "kind": "StringLiteral",
       "offset": 838,
@@ -11900,7 +12137,7 @@
       "kind": "StringLiteral",
       "offset": 2453,
       "length": 7,
-      "value": "\"1.0.8\""
+      "value": "\"1.0.9\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
@@ -11912,42 +12149,42 @@
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 13606,
+      "offset": 14075,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 15021,
+      "offset": 15490,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 34915,
+      "offset": 40182,
       "length": 30,
       "value": "\"LinkzlyUniversalLinkReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 35010,
+      "offset": 40277,
       "length": 29,
       "value": "\"LinkzlyDeepLinkDataReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "StringLiteral",
-      "offset": 35104,
+      "offset": 40371,
       "length": 29,
       "value": "\"LinkzlyServerConfigReceived\""
     },
     {
       "filePath": "\/Users\/maren\/Documents\/linkzly-projects\/linkzly-sdk-distribution\/ios-distribution\/linkzly-ios-framework\/LinkzlySDK\/LinkzlySDK.swift",
       "kind": "Dictionary",
-      "offset": 36455,
+      "offset": 41722,
       "length": 3,
       "value": "[]"
     }

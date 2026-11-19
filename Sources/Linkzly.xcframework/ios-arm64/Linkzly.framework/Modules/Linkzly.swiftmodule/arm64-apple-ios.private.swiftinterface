@@ -247,6 +247,8 @@ public typealias UniversalLinkHandler = (_ url: Foundation::URL, _ attributionDa
   @objc public static func getNotificationToken() -> Swift::String?
   @objc public static func hasNotificationToken() -> Swift::Bool
   @objc public static func clearNotificationToken()
+  @objc public static func trackNotificationOpen(userInfo: [Swift::AnyHashable : Any], actionIdentifier: Swift::String? = nil)
+  @objc public static func installNotificationOpenCapture()
   public static func setConsent(analytics: Linkzly::ConsentState? = nil, adUserData: Linkzly::ConsentState? = nil, adPersonalization: Linkzly::ConsentState? = nil)
   public static func getConsent() -> Linkzly::ConsentSnapshot?
   @objc public static func setTrackingEnabled(_ enabled: Swift::Bool)

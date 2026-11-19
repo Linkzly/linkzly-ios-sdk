@@ -62,7 +62,7 @@ Your SDK key (`slk_` prefix) authenticates your app with Linkzly's servers. You 
 
 ## Installation
 
-**SDK version:** 1.0.8
+**SDK version:** 1.0.9
 
 ### Swift Package Manager
 
@@ -77,7 +77,7 @@ Or add it to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Linkzly/linkzly-ios-sdk.git", from: "1.0.8")
+    .package(url: "https://github.com/Linkzly/linkzly-ios-sdk.git", from: "1.0.9")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [.product(name: "Linkzly", package: "linkzly-ios-sdk")])
@@ -89,7 +89,7 @@ targets: [
 `LinkzlySDK` is not published to CocoaPods Trunk, so the pod needs its Git source and tag:
 
 ```ruby
-pod 'LinkzlySDK', :git => 'https://github.com/Linkzly/linkzly-ios-sdk.git', :tag => '1.0.8'
+pod 'LinkzlySDK', :git => 'https://github.com/Linkzly/linkzly-ios-sdk.git', :tag => '1.0.9'
 ```
 
 Then import the module. The module is named `Linkzly`; the class you call is `LinkzlySDK`.
