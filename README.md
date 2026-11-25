@@ -393,6 +393,8 @@ LinkzlySDK.trackEvent("screen_view", parameters: [
 
 `revenue`, `currency` and `transactionId` are required. `transactionId` is the dedup key: a repeat of the same id is discarded. Purchases are recorded only when Revenue & LTV is enabled for your organisation. See [Tracking purchases](https://docs.linkzly.com/docs/sdk-tracking-purchases).
 
+Leave out `environment`: the SDK reads it from the app's receipt (`production` for an App Store build, `sandbox` for TestFlight, Xcode and sandbox testing). A value you pass replaces it, so do not hard-code `production`. See [Purchase environment](https://docs.linkzly.com/docs/sdk-tracking-purchases#purchase-environment).
+
 ```swift
 LinkzlySDK.trackPurchase(parameters: [
     "revenue": 29.99,
